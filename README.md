@@ -1,4 +1,4 @@
-# VitePress Documentation site
+# VitePress Documentation site template
 
 ## Local Development
 
