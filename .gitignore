@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/*
+*.local
+
+# Editor files and directories
+.vscode/*
+.DS_Store
+*.njsproj
+
+# Local configuration
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional eslint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# TypeScript cache
+*.tsbuildinfo
+
+# vitepress build output
+.vitepress/cache
+.vitepress/dist

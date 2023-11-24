@@ -1,0 +1,22 @@
+{
+  "name": "vitepress-template",
+  "version": "0.1.0",
+  "description": "VitePress documentation site template",
+  "keywords": [
+    "vue",
+    "vite",
+    "vitepress",
+    "documentation"
+  ],
+  "author": "lIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl",
+  "licence": "MIT",
+  "scripts": {
+    "build": "npm install && vitepress build",
+    "rebuild": "npm update && vitepress build",
+    "start": "vitepress dev --port 3000",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.29"
+  }
+}
