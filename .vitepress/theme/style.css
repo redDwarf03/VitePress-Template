@@ -675,99 +675,81 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
-.VPNav,
-.VPNavBar {
+.VPNav {
   background-color: var(--clr-primary-15) !important;
 }
 
-.VPNavBarTitle .title {
-  position: fixed;
-  left: 32px;
-}
-
-.VPNavBar.has-sidebar .title {
-  position: fixed;
-  left: 0 !important;
-  padding-left: 32px !important;
+.VPNavBarTitle.has-sidebar .title {
   background-color: var(--clr-primary-15) !important;
-  width: var(--vp-sidebar-width) !important;
+  border-bottom: none !important;
 }
 
-.VPNavBar .container .content .content-body {
-  position: fixed !important;
-}
-
-.VPSwitch {
-  border: 0 !important;
-  background-color: var(--clr-primary-25) !important;
-}
-
-.check {
-  top: 2px ! important;
-}
-
-@media (max-width: 767px) {
-
-  .VPNavBarTitle .title,
-  .VPNavBar.has-sidebar .title {
-    left: 0 !important;
-    padding-left: 24px !important;
+@media (max-width: 1023px) {
+  .content-body {
     background-color: var(--clr-primary-15) !important;
   }
 
-  .VPNavBar .container .content .content-body {
-    right: 8px !important;
+  .VPSwitch {
+    border: 0 !important;
+    background-color: var(--clr-primary-25) !important;
+  }
+
+  .check {
+    top: 2px ! important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 1024px) {
+
+  .VPNav,
+  .VPNavBar {
+    background-color: var(--clr-primary-15) !important;
+    border-bottom: 1px solid var(--clr-primary-15) !important;
+  }
+
   .VPNavBarTitle .title {
-    background-color: var(--clr-primary-15) !important;
-    padding-left: 32px !important;
-    left: 0 !important;
+    position: fixed;
+    left: 32px;
   }
 
-  .VPNavBar .container .content .content-body {
-    right: 24px !important;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPNavBarTitle .title {
-    background-color: var(--clr-primary-15) !important;
-    padding-left: 32px !important;
-    left: 0 !important;
-  }
-
-  .VPNavBar .container .content .content-body {
-    right: 32px !important;
-  }
-}
-
-@media (max-width: 959px) {
   .VPNavBar.has-sidebar .title {
-    padding-left: 24px !important;
+    position: fixed;
+    left: 0 !important;
+    padding-left: 32px !important;
+    background-color: var(--clr-primary-15) !important;
+    width: var(--vp-sidebar-width) !important;
   }
 
-  .VPNavBar.has-sidebar .title,
   .VPNavBar.has-sidebar .content {
-    left: 0 !important;
-    background-color: var(--clr-primary-15) !important;
-    width: 100% !important;
+    position: fixed;
+    right: 32px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
   }
-}
 
-.content-body {
-  background-color: var(--clr-primary-15) !important;
-}
+  .VPNavBar .container .content .content-body {
+    position: fixed !important;
+    right: 32px !important;
+    background-color: var(--clr-primary-15) !important;
+  }
 
-.VPNavScreen {
-  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
-  background-color: var(--clr-primary-15) !important;
-}
+  .VPNavScreen {
+    top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
+    background-color: var(--clr-primary-15) !important;
+  }
 
-.VPNavScreenAppearance {
-  background-color: var(--clr-primary-10) !important;
+  .VPNavScreenAppearance {
+    background-color: var(--clr-primary-10) !important;
+  }
+
+  .VPSwitch {
+    border: 0 !important;
+    background-color: var(--clr-primary-25) !important;
+  }
+
+  .check {
+    top: 2px ! important;
+  }
 }
 
 /* ------------------------ Search ----------------------- */
@@ -842,10 +824,11 @@ body {
 
 /* ----------------------- LocalNav ---------------------- */
 .VPLocalNav {
+  top: -1px !important;
   border: none !important;
 }
 
-@media (min-width: 767px) and (min-width: 959px) {
+@media (min-width: 767px) and (max-width: 959px) {
   .VPLocalNavOutlineDropdown {
     padding: 12px 32px 11px !important;
   }
@@ -855,24 +838,58 @@ body {
   gap: 0 !important;
 }
 
-@media (min-width: 280px) and (max-width: 960px) {
+@media (min-width: 280px) and (max-width: 460px) {
   .items {
+    top: 46px !important;
     left: 24px !important;
     right: 24px !important;
+  }
+
+  .header .top-link {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .nested {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .outline {
+    padding-bottom: 16px !important;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 960px) {
+  .items {
+    top: 46px !important;
+    left: 32px !important;
+    right: 32px !important;
+  }
+
+  .header .top-link {
+    padding-top: 8px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .nested {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .outline {
+    padding-bottom: 16px !important;
   }
 }
 
 .outline {
   padding-top: 16px;
-  padding-bottom: 16px !important;
+  margin-top: -16px;
 }
 
 .outline-title {
   color: var(--vp-c-brand-1) !important;
-}
-
-.nested {
-  padding-right: 16px;
 }
 
 /* ----------------------- SideBar ----------------------- */
@@ -917,13 +934,6 @@ body {
 
 .VPNavBarTitle.has-sidebar .title {
   border-bottom-color: var(--clr-primary-15) !important;
-}
-
-.VPNavBar.has-sidebar .content {
-  position: fixed;
-  right: 32px !important;
-  padding-left: 32px !important;
-  padding-right: 32px !important;
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -1019,7 +1029,7 @@ body {
   margin-top: 8px !important;
 }
 
-.vp-doc h3 > .VPBadge {
+.vp-doc h3>.VPBadge {
   margin-top: 4px !important;
 }
 
