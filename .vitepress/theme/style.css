@@ -772,6 +772,7 @@ body {
 }
 
 .DocSearch-Container {
+  overflow-x: hidden !important;
   background-color: var(--search-background) !important;
 }
 
@@ -836,6 +837,8 @@ body {
 
 .items {
   gap: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid var(--clr-primary-25) !important;
 }
 
 @media (min-width: 280px) and (max-width: 460px) {
