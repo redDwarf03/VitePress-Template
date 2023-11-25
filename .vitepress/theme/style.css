@@ -916,7 +916,7 @@ body {
 }
 
 .VPNavBarTitle.has-sidebar .title {
-  border-bottom-color: transparent !important;
+  border-bottom-color: var(--clr-primary-15) !important;
 }
 
 .VPNavBar.has-sidebar .content {
@@ -967,6 +967,10 @@ body {
 }
 
 /* ----------------------- Curtains ---------------------- */
+.curtain {
+  display: none !important;
+}
+
 .VPNavBar.has-sidebar .curtain,
 .aside-curtain {
   display: none;
@@ -998,6 +1002,12 @@ body {
 @media (max-width: 639px) {
   .vp-doc li div[class*='language-'] {
     border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 819px) {
+  .vp-doc .header-anchor:before {
+    content: none !important;
   }
 }
 
