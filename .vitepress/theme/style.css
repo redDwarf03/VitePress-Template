@@ -59,10 +59,10 @@
   --vp-c-grey-2: var(--clr-primary-65);
   --vp-c-grey-3: var(--clr-primary-30);
   --vp-c-grey-soft: var(--clr-primary-45);
-  --vp-c-purple-1: hsl(280, 50%, 65%);
-  --vp-c-purple-2: hsl(280, 50%, 30%);
-  --vp-c-purple-3: hsl(280, 50%, 15%);
-  --vp-c-purple-soft: hsl(280, 50%, 45%);
+  --vp-c-purple-1: hsl(300, 50%, 65%);
+  --vp-c-purple-2: hsl(300, 50%, 30%);
+  --vp-c-purple-3: hsl(300, 50%, 15%);
+  --vp-c-purple-soft: hsl(300, 50%, 45%);
   --vp-c-blue-1: hsl(200, 50%, 65%);
   --vp-c-blue-2: hsl(200, 50%, 30%);
   --vp-c-blue-3: hsl(200, 50%, 15%);
