@@ -644,29 +644,33 @@ body {
 
 /* ----------------------------------------------------- Scrollbar ---------------------------------------------------- */
 /* ----------------------- Firefox ----------------------- */
-* {
-  scrollbar-width: auto;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+@media (min-width: 1025px) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
 }
 
 /* ----------------- Chrome, Edge, Safari ---------------- */
-*::-webkit-scrollbar {
-  width: var(--scrollbar-width);
-  height: var(--scrollbar-width);
-}
+@media (min-width: 1025px) {
+  *::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+  }
 
-*::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
-}
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
 
-*::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
-  border-radius: var(--scrollbar-width);
-  border: calc(var(--scrollbar-width) / 4) solid var(--page-background);
-}
+  *::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-width);
+    border: calc(var(--scrollbar-width) / 4) solid var(--page-background);
+  }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover);
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
 }
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
