@@ -873,7 +873,7 @@ header {
   }
 }
 
-@media (min-width: 461px) and (max-width: 960px) {
+@media (min-width: 461px) and (max-width: 1023px) {
   .items {
     top: 46px !important;
     left: 32px !important;
@@ -910,18 +910,21 @@ header {
   top: var(--vp-nav-height) !important;
   padding-top: 32px !important;
   padding-left: 32px;
-  width: var(--vp-sidebar-width) !important;
   background-color: var(--vp-c-bg-elv) !important;
   border-right: 1px solid var(--vp-c-gray-3) !important;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
+  .VPSidebar {
+    width: var(--vp-sidebar-width) !important;
+  }
+
   #VPSidebarNav {
     margin-top: -16px !important;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1023px) {
   .VPSidebar {
     top: 0 !important;
     padding-top: 32px !important;
@@ -991,7 +994,7 @@ header {
   }
 }
 
-@media (min-width: 960px) and (max-width: 1025px) {
+@media (width: 1024px) {
   .VPHero {
     padding-top: 30% !important;
   }
