@@ -684,11 +684,15 @@ body {
   border-bottom: transparent !important;
 }
 
-header {
-  border-bottom: 1px solid var(--vp-c-gray-3) !important;
+.VPMenu {
+  background-color: var(--vp-c-bg-primary) !important;
 }
 
 @media (max-width: 1023px) {
+  header {
+    border-bottom: 1px solid var(--vp-c-gray-3) !important;
+  }
+
   .content-body {
     background-color: var(--vp-c-bg-primary) !important;
   }
@@ -713,7 +717,7 @@ header {
   .VPNavBar {
     background-color: var(--vp-c-bg-primary) !important;
     height: var(--vp-nav-height) + 1px !important;
-    border-bottom-color: transparent !important;
+    border-bottom-color: var(--vp-c-divider) !important;
   }
 
   .VPNavBarTitle .title {
@@ -925,7 +929,7 @@ header {
   border-right: 1px solid var(--vp-c-gray-3) !important;
 }
 
-.VPSidebarItem.is-active > .item .link > .text:hover {
+.VPSidebarItem.is-active>.item .link>.text:hover {
   color: var(--vp-c-brand-1) !important;
   background-color: var(--vp-c-bg-primary) !important;
 }
