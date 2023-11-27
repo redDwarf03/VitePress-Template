@@ -88,9 +88,9 @@
   --vp-c-text-2: var(--clr-primary-70);
   --vp-c-text-3: var(--clr-primary-50);
 
-  --vp-c-bg: var(--clr-primary-10);
+  --vp-c-bg-default: var(--clr-primary-10);
+  --vp-c-bg-primary: var(--clr-primary-15);
   --vp-c-bg-alt: var(--clr-primary-10);
-  --vp-c-bg-elv: var(--clr-primary-15);
   --vp-c-bg-soft: var(--clr-primary-15);
 
   --vp-c-border: var(--clr-primary-30);
@@ -128,8 +128,8 @@
 
   /* --------- NavBar -------- */
   --vp-nav-height: 64px;
-  --vp-nav-bg-color: var(--vp-c-bg);
-  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  --vp-nav-bg-color: var(--vp-c-bg-default);
+  --vp-nav-screen-bg-color: var(--vp-c-bg-default);
   --vp-nav-logo-height: 24px;
 
   --vp-input-border-color: var(--vp-c-border);
@@ -165,10 +165,10 @@
   --docsearch-footer-height: 44px;
   --docsearch-footer-background: #fff;
   --docsearch-footer-shadow: 0 -1px 0 0 var(--clr-primary-10), 0 -3px 6px 0 var(--clr-primary-45);
-  --vp-local-search-bg: var(--vp-c-bg);
-  --vp-local-search-result-bg: var(--vp-c-bg);
+  --vp-local-search-bg: var(--vp-c-bg-default);
+  --vp-local-search-result-bg: var(--vp-c-bg-default);
   --vp-local-search-result-border: var(--vp-c-divider);
-  --vp-local-search-result-selected-bg: var(--vp-c-bg);
+  --vp-local-search-result-selected-bg: var(--vp-c-bg-default);
   --vp-local-search-result-selected-border: var(--vp-c-brand-1);
   --vp-local-search-highlight-bg: var(--vp-c-brand-1);
   --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
@@ -180,7 +180,7 @@
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
 
   /* -------- LocalNav ------- */
-  --vp-local-nav-bg-color: var(--vp-c-bg);
+  --vp-local-nav-bg-color: var(--vp-c-bg-default);
 
   /* ----- Frames & Badges ---- */
   --vp-c-default-1: var(--vp-c-gray-1);
@@ -413,9 +413,9 @@
   --vp-c-text-2: var(--clr-primary-70);
   --vp-c-text-3: var(--clr-primary-50);
 
-  --vp-c-bg: var(--clr-primary-0);
+  --vp-c-bg-default: var(--clr-primary-0);
+  --vp-c-bg-primary: var(--clr-primary-2-5);
   --vp-c-bg-alt: var(--clr-primary-0);
-  --vp-c-bg-elv: var(--clr-primary-2-5);
   --vp-c-bg-soft: var(--clr-primary-2-5);
 
   --vp-c-border: var(--clr-primary-20);
@@ -453,8 +453,8 @@
 
   /* --------- NavBar -------- */
   --vp-nav-height: 64px;
-  --vp-nav-bg-color: var(--vp-c-bg);
-  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  --vp-nav-bg-color: var(--vp-c-bg-default);
+  --vp-nav-screen-bg-color: var(--vp-c-bg-default);
   --vp-nav-logo-height: 24px;
 
   --vp-input-border-color: var(--vp-c-border);
@@ -490,10 +490,10 @@
   --docsearch-footer-height: 44px;
   --docsearch-footer-background: #fff;
   --docsearch-footer-shadow: 0 -1px 0 0 var(--clr-primary-10), 0 -3px 6px 0 var(--clr-primary-45);
-  --vp-local-search-bg: var(--vp-c-bg);
-  --vp-local-search-result-bg: var(--vp-c-bg);
+  --vp-local-search-bg: var(--vp-c-bg-default);
+  --vp-local-search-result-bg: var(--vp-c-bg-default);
   --vp-local-search-result-border: var(--vp-c-divider);
-  --vp-local-search-result-selected-bg: var(--vp-c-bg);
+  --vp-local-search-result-selected-bg: var(--vp-c-bg-default);
   --vp-local-search-result-selected-border: var(--vp-c-brand-1);
   --vp-local-search-highlight-bg: var(--vp-c-brand-1);
   --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
@@ -505,7 +505,7 @@
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
 
   /* -------- LocalNav ------- */
-  --vp-local-nav-bg-color: var(--vp-c-bg);
+  --vp-local-nav-bg-color: var(--vp-c-bg-default);
 
   /* ----- Frames & Badges ---- */
   --vp-c-default-1: var(--vp-c-gray-1);
@@ -590,8 +590,8 @@
   --vp-code-link-hover-color: var(--vp-c-brand-2);
   --vp-code-bg: var(--vp-c-default-soft);
   --vp-code-block-color: var(--vp-c-text-2);
-  --vp-code-block-bg: var(--vp-c-bg-elv);
-  --vp-code-block-divider-color: var(--vp-c-bg-elv);
+  --vp-code-block-bg: var(--vp-c-bg-primary);
+  --vp-code-block-divider-color: var(--vp-c-bg-primary);
   --vp-code-lang-color: var(--vp-c-text-3);
   --vp-code-line-highlight-color: var(--vp-c-default-soft);
   --vp-code-line-number-color: var(--vp-c-text-3);
@@ -635,7 +635,7 @@
 }
 
 body {
-  background-color: var(--vp-c-bg) !important;
+  background-color: var(--vp-c-bg-default) !important;
 }
 
 .container {
@@ -672,11 +672,11 @@ body {
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
 .VPNav {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
 }
 
 .VPNavBarTitle.has-sidebar .title {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   border-bottom-color: transparent !important;
 }
 
@@ -690,7 +690,7 @@ header {
 
 @media (max-width: 1023px) {
   .content-body {
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
   }
 
   .VPSwitch {
@@ -711,7 +711,7 @@ header {
 
   .VPNav,
   .VPNavBar {
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
     height: var(--vp-nav-height) + 1px !important;
   }
 
@@ -724,7 +724,7 @@ header {
     position: fixed;
     left: 0 !important;
     padding-left: 32px !important;
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
     width: var(--vp-sidebar-width) !important;
   }
 
@@ -738,12 +738,12 @@ header {
   .VPNavBar .container .content .content-body {
     position: fixed !important;
     right: 32px !important;
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
   }
 
   .VPNavScreen {
     top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
   }
 
   .VPNavScreenAppearance {
@@ -793,13 +793,13 @@ header {
 }
 
 .DocSearch-Form {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--clr-primary-25) !important;
 }
 
 .DocSearch-Modal {
   background-color: var(--docsearch-color) !important;
-  border: 1px solid var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-bg-primary) !important;
   box-shadow: none;
 }
 
@@ -810,7 +810,7 @@ header {
 }
 
 .DocSearch-Hit a {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--vp-c-divider) !important;
   box-shadow: none !important;
 }
@@ -834,7 +834,7 @@ header {
 
 @media (max-width: 767px) {
   .DocSearch-Button {
-    background-color: var(--vp-c-bg-elv) !important;
+    background-color: var(--vp-c-bg-primary) !important;
     border: none !important;
   }
 }
@@ -920,13 +920,13 @@ header {
   top: var(--vp-nav-height) !important;
   padding-top: 32px !important;
   padding-left: 32px;
-  background-color: var(--vp-c-bg) !important;
+  background-color: var(--vp-c-bg-default) !important;
   border-right: 1px solid var(--vp-c-gray-3) !important;
 }
 
 .VPSidebarItem.is-active > .item .link > .text:hover {
   color: var(--vp-c-brand-1) !important;
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
 }
 
 @media (min-width: 1024px) {
@@ -953,7 +953,7 @@ header {
 }
 
 .VPLink p:hover {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   color: var(--vp-c-text-2) !important;
   transition: color 0.3s;
   border-radius: 8px;
@@ -981,7 +981,7 @@ header {
 }
 
 .VPDocOutlineDropdown button {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--vp-c-divider) !important;
 }
 
@@ -996,11 +996,11 @@ header {
 
 .VPButton.alt {
   border: 1px solid var(--vp-c-divider) !important;
-  background-color: var(--vp-c-bg-elv-2) !important;
+  background-color: var(--vp-c-bg-primary-2) !important;
 }
 
 .VPButton.alt:hover {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
 }
 
 @media (min-width: 1280px) {
@@ -1017,7 +1017,7 @@ header {
 
 /* ----------------------- Feature ----------------------- */
 .VPFeature {
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--vp-c-divider) !important;
 }
 
