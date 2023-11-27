@@ -478,7 +478,7 @@
   --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 var(--clr-primary-25);
   --docsearch-searchbox-height: 56px;
   --docsearch-searchbox-background: var(--clr-primary-95);
-  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-focus-background: red;
   --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
   --docsearch-hit-height: 56px;
   --docsearch-hit-color: var(--clr-primary-70);
@@ -798,7 +798,7 @@ header {
 }
 
 .DocSearch-Modal {
-  background-color: var(--clr-primary-10) !important;
+  background-color: var(--docsearch-color) !important;
   border: 1px solid var(--vp-c-bg-elv) !important;
   box-shadow: none;
 }
@@ -809,8 +809,17 @@ header {
   }
 }
 
+.DocSearch-Hit a {
+  background-color: var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+}
+
+.DocSearch-Hit[aria-selected=true] a {
+  background-color: var(--vp-c-brand-2) !important;
+}
+
 .DocSearch-Hit-source {
-  background-color: var(--clr-primary-10) !important;
+  background-color: var(--docsearch-color) !important;
 }
 
 .DocSearch-HitsFooter {
