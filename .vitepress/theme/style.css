@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-:root {
-  color-scheme: dark light;
+:root.dark {
   font-family: "Poppins", monospace;
   /* ------------------------------------------------------ Colors ------------------------------------------------------ */
   /* ------------------------ Global ----------------------- */
@@ -53,7 +52,7 @@
   /* --------- Global -------- */
   --vp-c-gray-1: var(--clr-primary-25);
   --vp-c-gray-2: var(--clr-primary-30);
-  --vp-c-gray-3: var(--clr-primary-35);
+  --vp-c-gray-3: var(--clr-primary-20);
   --vp-c-gray-soft: var(--clr-primary-15);
   --vp-c-grey-1: var(--clr-primary-15);
   --vp-c-grey-2: var(--clr-primary-65);
@@ -62,7 +61,7 @@
   --vp-c-purple-1: hsl(300, 50%, 65%);
   --vp-c-purple-2: hsl(300, 50%, 30%);
   --vp-c-purple-3: hsl(300, 50%, 15%);
-  --vp-c-purple-soft: hsl(300, 50%, 45%);
+  --vp-c-purple-soft: hsl(300, 50%, 35%);
   --vp-c-blue-1: hsl(200, 50%, 65%);
   --vp-c-blue-2: hsl(200, 50%, 30%);
   --vp-c-blue-3: hsl(200, 50%, 15%);
@@ -70,11 +69,11 @@
   --vp-c-green-1: hsl(150, 50%, 65%);
   --vp-c-green-2: hsl(150, 50%, 30%);
   --vp-c-green-3: hsl(150, 50%, 15%);
-  --vp-c-green-soft: hsl(150, 50%, 45%);
+  --vp-c-green-soft: hsl(150, 50%, 55%);
   --vp-c-yellow-1: hsl(50, 50%, 65%);
   --vp-c-yellow-2: hsl(50, 50%, 30%);
   --vp-c-yellow-3: hsl(50, 50%, 15%);
-  --vp-c-yellow-soft: hsl(50, 50%, 45%);
+  --vp-c-yellow-soft: hsl(50, 50%, 55%);
   --vp-c-red-1: hsl(350, 50%, 65%);
   --vp-c-red-2: hsl(350, 50%, 30%);
   --vp-c-red-3: hsl(350, 50%, 15%);
@@ -83,7 +82,7 @@
   --vp-c-white: #ffffff;
   --vp-c-black: #000000;
   --vp-c-neutral: var(--vp-c-white);
-  --vp-c-neutral-inverse: var(--vp-c-black);
+  --vp-c-neutral-inverse: var(--clr-primary-10);
 
   --vp-c-text-1: var(--clr-primary-90);
   --vp-c-text-2: var(--clr-primary-70);
@@ -138,6 +137,8 @@
   --vp-input-switch-bg-color: var(--vp-c-gray-soft);
 
   /* --------- Search -------- */
+  --docsearch-color: var(--clr-primary-10);
+  --docsearch-border-color: var(--clr-primary-20);
   --docsearch-primary-color: var(--vp-c-brand-1);
   --docsearch-text-color: var(--clr-primary-85);
   --docsearch-spacing: 12px;
@@ -302,11 +303,6 @@
   --clr-card-underline: var(--clr-primary-25);
   --card-shadow: 0 0 20px var(--clr-primary-0);
 
-  /* ------- BackToTop ------- */
-  --back-to-top-button: var(--clr-primary-20);
-  --back-to-top-button-hover: var(--clr-primary-30);
-  --back-to-top-chevron: var(--clr-primary-90);
-
   /* -------- Z-index -------- */
   --vp-z-index-footer: 10;
   --vp-z-index-local-nav: 20;
@@ -329,317 +325,317 @@
   --scrollbar-width: 7px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light dark;
-    /* ------------------------------------------------------ Colors ------------------------------------------------------ */
-    /* ------------------------ Global ----------------------- */
-    --clr-neutral-0: hsl(0, 0%, 100%);
-    --clr-neutral-5: hsl(0, 0%, 95%);
-    --clr-neutral-10: hsl(0, 0%, 90%);
-    --clr-neutral-15: hsl(0, 0%, 85%);
-    --clr-neutral-20: hsl(0, 0%, 80%);
-    --clr-neutral-25: hsl(0, 0%, 75%);
-    --clr-neutral-30: hsl(0, 0%, 70%);
-    --clr-neutral-35: hsl(0, 0%, 65%);
-    --clr-neutral-40: hsl(0, 0%, 60%);
-    --clr-neutral-45: hsl(0, 0%, 55%);
-    --clr-neutral-50: hsl(0, 0%, 50%);
-    --clr-neutral-55: hsl(0, 0%, 45%);
-    --clr-neutral-60: hsl(0, 0%, 40%);
-    --clr-neutral-65: hsl(0, 0%, 35%);
-    --clr-neutral-70: hsl(0, 0%, 30%);
-    --clr-neutral-75: hsl(0, 0%, 25%);
-    --clr-neutral-80: hsl(0, 0%, 20%);
-    --clr-neutral-85: hsl(0, 0%, 15%);
-    --clr-neutral-90: hsl(0, 0%, 10%);
-    --clr-neutral-95: hsl(0, 0%, 5%);
-    --clr-neutral-100: hsl(0, 0%, 0%);
+:root {
+  /* ------------------------------------------------------ Colors ------------------------------------------------------ */
+  /* ------------------------ Global ----------------------- */
+  --clr-neutral-0: hsl(0, 0%, 100%);
+  --clr-neutral-5: hsl(0, 0%, 95%);
+  --clr-neutral-10: hsl(0, 0%, 90%);
+  --clr-neutral-15: hsl(0, 0%, 85%);
+  --clr-neutral-20: hsl(0, 0%, 80%);
+  --clr-neutral-25: hsl(0, 0%, 75%);
+  --clr-neutral-30: hsl(0, 0%, 70%);
+  --clr-neutral-35: hsl(0, 0%, 65%);
+  --clr-neutral-40: hsl(0, 0%, 60%);
+  --clr-neutral-45: hsl(0, 0%, 55%);
+  --clr-neutral-50: hsl(0, 0%, 50%);
+  --clr-neutral-55: hsl(0, 0%, 45%);
+  --clr-neutral-60: hsl(0, 0%, 40%);
+  --clr-neutral-65: hsl(0, 0%, 35%);
+  --clr-neutral-70: hsl(0, 0%, 30%);
+  --clr-neutral-75: hsl(0, 0%, 25%);
+  --clr-neutral-80: hsl(0, 0%, 20%);
+  --clr-neutral-85: hsl(0, 0%, 15%);
+  --clr-neutral-90: hsl(0, 0%, 10%);
+  --clr-neutral-95: hsl(0, 0%, 5%);
+  --clr-neutral-100: hsl(0, 0%, 0%);
 
-    --clr-primary-0: hsl(210, 15%, 100%);
-    --clr-primary-2-5: hsl(210, 15%, 97.5%);
-    --clr-primary-5: hsl(210, 15%, 95%);
-    --clr-primary-10: hsl(210, 15%, 90%);
-    --clr-primary-15: hsl(210, 15%, 85%);
-    --clr-primary-20: hsl(210, 15%, 80%);
-    --clr-primary-25: hsl(210, 15%, 75%);
-    --clr-primary-30: hsl(210, 15%, 70%);
-    --clr-primary-35: hsl(210, 15%, 65%);
-    --clr-primary-40: hsl(210, 15%, 60%);
-    --clr-primary-45: hsl(210, 15%, 55%);
-    --clr-primary-50: hsl(210, 15%, 50%);
-    --clr-primary-55: hsl(210, 15%, 45%);
-    --clr-primary-60: hsl(210, 15%, 40%);
-    --clr-primary-65: hsl(210, 15%, 35%);
-    --clr-primary-70: hsl(210, 15%, 30%);
-    --clr-primary-75: hsl(210, 15%, 25%);
-    --clr-primary-80: hsl(210, 15%, 20%);
-    --clr-primary-85: hsl(210, 15%, 15%);
-    --clr-primary-90: hsl(210, 15%, 10%);
-    --clr-primary-95: hsl(210, 15%, 5%);
-    --clr-primary-100: hsl(210, 15%, 0%);
+  --clr-primary-0: hsl(210, 15%, 100%);
+  --clr-primary-2-5: hsl(210, 15%, 97.5%);
+  --clr-primary-5: hsl(210, 15%, 95%);
+  --clr-primary-10: hsl(210, 15%, 90%);
+  --clr-primary-15: hsl(210, 15%, 85%);
+  --clr-primary-20: hsl(210, 15%, 80%);
+  --clr-primary-25: hsl(210, 15%, 75%);
+  --clr-primary-30: hsl(210, 15%, 70%);
+  --clr-primary-35: hsl(210, 15%, 65%);
+  --clr-primary-40: hsl(210, 15%, 60%);
+  --clr-primary-45: hsl(210, 15%, 55%);
+  --clr-primary-50: hsl(210, 15%, 50%);
+  --clr-primary-55: hsl(210, 15%, 45%);
+  --clr-primary-60: hsl(210, 15%, 40%);
+  --clr-primary-65: hsl(210, 15%, 35%);
+  --clr-primary-70: hsl(210, 15%, 30%);
+  --clr-primary-75: hsl(210, 15%, 25%);
+  --clr-primary-80: hsl(210, 15%, 20%);
+  --clr-primary-85: hsl(210, 15%, 15%);
+  --clr-primary-90: hsl(210, 15%, 10%);
+  --clr-primary-95: hsl(210, 15%, 5%);
+  --clr-primary-100: hsl(210, 15%, 0%);
 
-    /* ----------------------- Project ----------------------- */
-    /* --------- Global -------- */
-    --vp-c-gray-1: var(--clr-primary-25);
-    --vp-c-gray-2: var(--clr-primary-30);
-    --vp-c-gray-3: var(--clr-primary-35);
-    --vp-c-gray-soft: var(--clr-primary-15);
-    --vp-c-grey-1: var(--clr-primary-15);
-    --vp-c-grey-2: var(--clr-primary-65);
-    --vp-c-grey-3: var(--clr-primary-30);
-    --vp-c-grey-soft: var(--clr-primary-45);
-    --vp-c-purple-1: hsl(280, 50%, 65%);
-    --vp-c-purple-2: hsl(280, 50%, 30%);
-    --vp-c-purple-3: hsl(280, 50%, 15%);
-    --vp-c-purple-soft: hsl(280, 50%, 45%);
-    --vp-c-blue-1: hsl(200, 50%, 65%);
-    --vp-c-blue-2: hsl(200, 50%, 30%);
-    --vp-c-blue-3: hsl(200, 50%, 15%);
-    --vp-c-blue-soft: hsl(200, 50%, 45%);
-    --vp-c-green-1: hsl(150, 50%, 65%);
-    --vp-c-green-2: hsl(150, 50%, 30%);
-    --vp-c-green-3: hsl(150, 50%, 15%);
-    --vp-c-green-soft: hsl(150, 50%, 45%);
-    --vp-c-yellow-1: hsl(30, 50%, 65%);
-    --vp-c-yellow-2: hsl(30, 50%, 30%);
-    --vp-c-yellow-3: hsl(30, 50%, 15%);
-    --vp-c-yellow-soft: hsl(30, 50%, 45%);
-    --vp-c-red-1: hsl(350, 50%, 65%);
-    --vp-c-red-2: hsl(350, 50%, 30%);
-    --vp-c-red-3: hsl(350, 50%, 15%);
-    --vp-c-red-soft: hsl(350, 50%, 45%);
+  /* ----------------------- Project ----------------------- */
+  /* --------- Global -------- */
+  --vp-c-gray-1: var(--clr-primary-15);
+  --vp-c-gray-2: var(--clr-primary-20);
+  --vp-c-gray-3: var(--clr-primary-10);
+  --vp-c-gray-soft: var(--clr-primary-5);
+  --vp-c-grey-1: var(--clr-primary-5);
+  --vp-c-grey-2: var(--clr-primary-55);
+  --vp-c-grey-3: var(--clr-primary-20);
+  --vp-c-grey-soft: var(--clr-primary-35);
+  --vp-c-purple-1: hsl(300, 50%, 35%);
+  --vp-c-purple-2: hsl(300, 50%, 70%);
+  --vp-c-purple-3: hsl(300, 50%, 85%);
+  --vp-c-purple-soft: hsl(300, 50%, 75%);
+  --vp-c-blue-1: hsl(200, 50%, 35%);
+  --vp-c-blue-2: hsl(200, 50%, 70%);
+  --vp-c-blue-3: hsl(200, 50%, 85%);
+  --vp-c-blue-soft: hsl(200, 50%, 75%);
+  --vp-c-green-1: hsl(150, 50%, 35%);
+  --vp-c-green-2: hsl(150, 50%, 70%);
+  --vp-c-green-3: hsl(150, 50%, 85%);
+  --vp-c-green-soft: hsl(150, 50%, 75%);
+  --vp-c-yellow-1: hsl(50, 50%, 35%);
+  --vp-c-yellow-2: hsl(50, 50%, 70%);
+  --vp-c-yellow-3: hsl(50, 50%, 85%);
+  --vp-c-yellow-soft: hsl(50, 50%, 75%);
+  --vp-c-red-1: hsl(350, 50%, 35%);
+  --vp-c-red-2: hsl(350, 50%, 70%);
+  --vp-c-red-3: hsl(350, 50%, 85%);
+  --vp-c-red-soft: hsl(350, 50%, 75%);
 
-    --vp-c-white: #ffffff;
-    --vp-c-black: #000000;
-    --vp-c-neutral: var(--vp-c-white);
-    --vp-c-neutral-inverse: var(--vp-c-black);
+  --vp-c-white: #ffffff;
+  --vp-c-black: #000000;
+  --vp-c-neutral: var(--vp-c-white);
+  --vp-c-neutral-inverse: var(--clr-primary-5);
 
-    --vp-c-text-1: var(--clr-primary-90);
-    --vp-c-text-2: var(--clr-primary-70);
-    --vp-c-text-3: var(--clr-primary-50);
+  --vp-c-text-1: var(--clr-primary-90);
+  --vp-c-text-2: var(--clr-primary-70);
+  --vp-c-text-3: var(--clr-primary-50);
 
-    --vp-c-bg: var(--clr-primary-10);
-    --vp-c-bg-alt: var(--clr-primary-10);
-    --vp-c-bg-elv: var(--clr-primary-15);
-    --vp-c-bg-soft: var(--clr-primary-15);
+  --vp-c-bg: var(--clr-primary-2-5);
+  --vp-c-bg-alt: var(--clr-primary-2-5);
+  --vp-c-bg-elv: var(--clr-primary-5);
+  --vp-c-bg-soft: var(--clr-primary-5);
 
-    --vp-c-border: var(--clr-primary-30);
-    --vp-c-divider: var(--clr-primary-20);
-    --vp-c-gutter: var(--clr-primary-90);
+  --vp-c-border: var(--clr-primary-20);
+  --vp-c-divider: var(--clr-primary-10);
+  --vp-c-gutter: var(--clr-primary-90);
 
-    /* -------- Brand -------- */
-    --vp-button-brand-border: transparent;
-    --vp-button-brand-text: var(--vp-c-white);
-    --vp-button-brand-bg: var(--vp-c-brand-2);
-    --vp-button-brand-hover-border: transparent;
-    --vp-button-brand-hover-text: var(--vp-c-white);
-    --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-    --vp-button-brand-active-border: transparent;
-    --vp-button-brand-active-text: var(--vp-c-white);
-    --vp-button-brand-active-bg: var(--vp-c-brand-1);
-    --vp-button-alt-border: transparent;
-    --vp-button-alt-text: var(--vp-c-text-1);
-    --vp-button-alt-bg: var(--vp-c-default-3);
-    --vp-button-alt-hover-border: transparent;
-    --vp-button-alt-hover-text: var(--vp-c-text-1);
-    --vp-button-alt-hover-bg: var(--vp-c-default-2);
-    --vp-button-alt-active-border: transparent;
-    --vp-button-alt-active-text: var(--vp-c-text-1);
-    --vp-button-alt-active-bg: var(--vp-c-default-1);
-    --vp-button-sponsor-border: var(--vp-c-text-2);
-    --vp-button-sponsor-text: var(--vp-c-text-2);
-    --vp-button-sponsor-bg: transparent;
-    --vp-button-sponsor-hover-border: var(--vp-c-sponsor);
-    --vp-button-sponsor-hover-text: var(--vp-c-sponsor);
-    --vp-button-sponsor-hover-bg: transparent;
-    --vp-button-sponsor-active-border: var(--vp-c-sponsor);
-    --vp-button-sponsor-active-text: var(--vp-c-sponsor);
-    --vp-button-sponsor-active-bg: transparent;
+  /* -------- Brand -------- */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-2);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  --vp-button-alt-border: transparent;
+  --vp-button-alt-text: var(--vp-c-text-1);
+  --vp-button-alt-bg: var(--vp-c-default-3);
+  --vp-button-alt-hover-border: transparent;
+  --vp-button-alt-hover-text: var(--vp-c-text-1);
+  --vp-button-alt-hover-bg: var(--vp-c-default-2);
+  --vp-button-alt-active-border: transparent;
+  --vp-button-alt-active-text: var(--vp-c-text-1);
+  --vp-button-alt-active-bg: var(--vp-c-default-1);
+  --vp-button-sponsor-border: var(--vp-c-text-2);
+  --vp-button-sponsor-text: var(--vp-c-text-2);
+  --vp-button-sponsor-bg: transparent;
+  --vp-button-sponsor-hover-border: var(--vp-c-sponsor);
+  --vp-button-sponsor-hover-text: var(--vp-c-sponsor);
+  --vp-button-sponsor-hover-bg: transparent;
+  --vp-button-sponsor-active-border: var(--vp-c-sponsor);
+  --vp-button-sponsor-active-text: var(--vp-c-sponsor);
+  --vp-button-sponsor-active-bg: transparent;
 
-    /* --------- NavBar -------- */
-    --vp-nav-height: 64px;
-    --vp-nav-bg-color: var(--vp-c-bg);
-    --vp-nav-screen-bg-color: var(--vp-c-bg);
-    --vp-nav-logo-height: 24px;
+  /* --------- NavBar -------- */
+  --vp-nav-height: 64px;
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  --vp-nav-logo-height: 24px;
 
-    --vp-input-border-color: var(--vp-c-border);
-    --vp-input-bg-color: var(--vp-c-bg-alt);
-    --vp-input-switch-bg-color: var(--vp-c-gray-soft);
+  --vp-input-border-color: var(--vp-c-border);
+  --vp-input-bg-color: var(--vp-c-bg-alt);
+  --vp-input-switch-bg-color: var(--vp-c-gray-soft);
 
-    /* --------- Search -------- */
-    --docsearch-primary-color: var(--vp-c-brand-1);
-    --docsearch-text-color: var(--clr-primary-85);
-    --docsearch-spacing: 12px;
-    --docsearch-icon-stroke-width: 1.4;
-    --docsearch-highlight-color: var(--vp-c-brand-1);
-    --docsearch-muted-color: var(--clr-primary-35);
-    --docsearch-container-background: rgba(101, 108, 133, 0.8);
-    --docsearch-logo-color: var(--vp-c-brand-1);
-    --docsearch-modal-width: 560px;
-    --docsearch-modal-height: 600px;
-    --docsearch-modal-background: var(--clr-primary-95);
-    --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 var(--clr-primary-35);
-    --docsearch-searchbox-height: 56px;
-    --docsearch-searchbox-background: var(--clr-primary-95);
-    --docsearch-searchbox-focus-background: #fff;
-    --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
-    --docsearch-hit-height: 56px;
-    --docsearch-hit-color: var(--clr-primary-30);
-    --docsearch-hit-active-color: #fff;
-    --docsearch-hit-background: #fff;
-    --docsearch-hit-shadow: 0 1px 3px 0 var(--clr-primary-15);
-    --docsearch-key-gradient: linear-gradient(-225deg, var(--clr-primary-15), #fff);
-    --docsearch-key-shadow: inset 0 -2px 0 0 var(--clr-primary-15), inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
-    --docsearch-footer-height: 44px;
-    --docsearch-footer-background: #fff;
-    --docsearch-footer-shadow: 0 -1px 0 0 var(--clr-primary-10), 0 -3px 6px 0 var(--clr-primary-45);
-    --vp-local-search-bg: var(--vp-c-bg);
-    --vp-local-search-result-bg: var(--vp-c-bg);
-    --vp-local-search-result-border: var(--vp-c-divider);
-    --vp-local-search-result-selected-bg: var(--vp-c-bg);
-    --vp-local-search-result-selected-border: var(--vp-c-brand-1);
-    --vp-local-search-highlight-bg: var(--vp-c-brand-1);
-    --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
-    --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
-    --search-background: hsla(210, 15%, 5%, 0.5);
+  /* --------- Search -------- */
+  --docsearch-color: var(--clr-primary-2-5);
+  --docsearch-border-color: var(--clr-primary-10);
+  --docsearch-primary-color: var(--vp-c-brand-1);
+  --docsearch-text-color: var(--clr-primary-85);
+  --docsearch-spacing: 12px;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--vp-c-brand-1);
+  --docsearch-muted-color: var(--clr-primary-25);
+  --docsearch-container-background: rgba(101, 108, 133, 0.8);
+  --docsearch-logo-color: var(--vp-c-brand-1);
+  --docsearch-modal-width: 560px;
+  --docsearch-modal-height: 600px;
+  --docsearch-modal-background: var(--clr-primary-95);
+  --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 var(--clr-primary-25);
+  --docsearch-searchbox-height: 56px;
+  --docsearch-searchbox-background: var(--clr-primary-95);
+  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
+  --docsearch-hit-height: 56px;
+  --docsearch-hit-color: var(--clr-primary-20);
+  --docsearch-hit-active-color: #fff;
+  --docsearch-hit-background: #fff;
+  --docsearch-hit-shadow: 0 1px 3px 0 var(--clr-primary-5);
+  --docsearch-key-gradient: linear-gradient(-225deg, var(--clr-primary-5), #fff);
+  --docsearch-key-shadow: inset 0 -2px 0 0 var(--clr-primary-5), inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  --docsearch-footer-height: 44px;
+  --docsearch-footer-background: #fff;
+  --docsearch-footer-shadow: 0 -1px 0 0 var(--clr-primary-10), 0 -3px 6px 0 var(--clr-primary-45);
+  --vp-local-search-bg: var(--vp-c-bg);
+  --vp-local-search-result-bg: var(--vp-c-bg);
+  --vp-local-search-result-border: var(--vp-c-divider);
+  --vp-local-search-result-selected-bg: var(--vp-c-bg);
+  --vp-local-search-result-selected-border: var(--vp-c-brand-1);
+  --vp-local-search-highlight-bg: var(--vp-c-brand-1);
+  --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
+  --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
+  --search-background: hsla(210, 15%, 5%, 0.5);
 
-    /* -------- SideBar -------- */
-    --vp-sidebar-width: 272px;
-    --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+  /* -------- SideBar -------- */
+  --vp-sidebar-width: 272px;
+  --vp-sidebar-bg-color: var(--vp-c-bg-alt);
 
-    /* -------- LocalNav ------- */
-    --vp-local-nav-bg-color: var(--vp-c-bg);
+  /* -------- LocalNav ------- */
+  --vp-local-nav-bg-color: var(--vp-c-bg);
 
-    /* ----- Frames & Badges ---- */
-    --vp-c-default-1: var(--vp-c-gray-1);
-    --vp-c-default-2: var(--vp-c-gray-2);
-    --vp-c-default-3: var(--vp-c-gray-3);
-    --vp-c-default-soft: var(--vp-c-gray-soft);
-    --vp-c-brand-1: var(--vp-c-purple-1);
-    --vp-c-brand-2: var(--vp-c-purple-2);
-    --vp-c-brand-3: var(--vp-c-purple-3);
-    --vp-c-brand-soft: var(--vp-c-purple-soft);
-    --vp-c-brand: var(--vp-c-brand-2);
-    --vp-c-info-1: var(--vp-c-blue-1);
-    --vp-c-info-2: var(--vp-c-blue-2);
-    --vp-c-info-3: var(--vp-c-blue-3);
-    --vp-c-info-soft: var(--vp-c-blue-soft);
-    --vp-c-tip-1: var(--vp-c-green-1);
-    --vp-c-tip-2: var(--vp-c-green-2);
-    --vp-c-tip-3: var(--vp-c-green-3);
-    --vp-c-tip-soft: var(--vp-c-green-soft);
-    --vp-c-warning-1: var(--vp-c-yellow-1);
-    --vp-c-warning-2: var(--vp-c-yellow-2);
-    --vp-c-warning-3: var(--vp-c-yellow-3);
-    --vp-c-warning-soft: var(--vp-c-yellow-soft);
-    --vp-c-danger-1: var(--vp-c-red-1);
-    --vp-c-danger-2: var(--vp-c-red-2);
-    --vp-c-danger-3: var(--vp-c-red-3);
-    --vp-c-danger-soft: var(--vp-c-red-soft);
+  /* ----- Frames & Badges ---- */
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+  --vp-c-brand-1: var(--vp-c-purple-2);
+  --vp-c-brand-2: var(--vp-c-purple-1);
+  --vp-c-brand-3: var(--vp-c-purple-1);
+  --vp-c-brand-soft: var(--vp-c-purple-soft);
+  --vp-c-brand: var(--vp-c-brand-2);
+  --vp-c-info-1: var(--vp-c-blue-1);
+  --vp-c-info-2: var(--vp-c-blue-2);
+  --vp-c-info-3: var(--vp-c-blue-1);
+  --vp-c-info-soft: var(--vp-c-blue-soft);
+  --vp-c-tip-1: var(--vp-c-green-1);
+  --vp-c-tip-2: var(--vp-c-green-2);
+  --vp-c-tip-3: var(--vp-c-green-1);
+  --vp-c-tip-soft: var(--vp-c-green-soft);
+  --vp-c-warning-1: var(--vp-c-yellow-1);
+  --vp-c-warning-2: var(--vp-c-yellow-2);
+  --vp-c-warning-3: var(--vp-c-yellow-1);
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+  --vp-c-danger-1: var(--vp-c-red-1);
+  --vp-c-danger-2: var(--vp-c-red-2);
+  --vp-c-danger-3: var(--vp-c-red-1);
+  --vp-c-danger-soft: var(--vp-c-red-soft);
 
-    /* --------- Frames -------- */
-    --vp-custom-block-font-size: 14px;
-    --vp-custom-block-code-font-size: 13px;
-    --vp-custom-block-info-border: var(--vp-c-blue-2);
-    --vp-custom-block-info-text: var(--vp-c-blue-1);
-    --vp-custom-block-info-bg: var(--vp-c-blue-3);
-    --vp-custom-block-info-code-bg: var(--vp-c-blue-soft);
-    --vp-custom-block-tip-border: var(--vp-c-green-2);
-    --vp-custom-block-tip-text: var(--vp-c-green-1);
-    --vp-custom-block-tip-bg: var(--vp-c-green-3);
-    --vp-custom-block-tip-code-bg: var(--vp-c-green-soft);
-    --vp-custom-block-warning-border: var(--vp-c-yellow-2);
-    --vp-custom-block-warning-text: var(--vp-c-yellow-1);
-    --vp-custom-block-warning-bg: var(--vp-c-yellow-3);
-    --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
-    --vp-custom-block-danger-border: var(--vp-c-red-2);
-    --vp-custom-block-danger-text: var(--vp-c-red-1);
-    --vp-custom-block-danger-bg: var(--vp-c-red-3);
-    --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
-    --vp-custom-block-details-border: var(--vp-c-grey-2);
-    --vp-custom-block-details-text: var(--vp-c-grey-2);
-    --vp-custom-block-details-bg: var(--vp-c-grey-1);
-    --vp-custom-block-details-code-bg: var(--vp-c-grey-3);
+  /* --------- Frames -------- */
+  --vp-custom-block-font-size: 14px;
+  --vp-custom-block-code-font-size: 13px;
+  --vp-custom-block-info-border: var(--vp-c-blue-2);
+  --vp-custom-block-info-text: var(--vp-c-blue-1);
+  --vp-custom-block-info-bg: var(--vp-c-blue-3);
+  --vp-custom-block-info-code-bg: var(--vp-c-blue-soft);
+  --vp-custom-block-tip-border: var(--vp-c-green-2);
+  --vp-custom-block-tip-text: var(--vp-c-green-1);
+  --vp-custom-block-tip-bg: var(--vp-c-green-3);
+  --vp-custom-block-tip-code-bg: var(--vp-c-green-soft);
+  --vp-custom-block-warning-border: var(--vp-c-yellow-2);
+  --vp-custom-block-warning-text: var(--vp-c-yellow-1);
+  --vp-custom-block-warning-bg: var(--vp-c-yellow-3);
+  --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
+  --vp-custom-block-danger-border: var(--vp-c-red-2);
+  --vp-custom-block-danger-text: var(--vp-c-red-1);
+  --vp-custom-block-danger-bg: var(--vp-c-red-3);
+  --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
+  --vp-custom-block-details-border: var(--vp-c-grey-2);
+  --vp-custom-block-details-text: var(--vp-c-grey-2);
+  --vp-custom-block-details-bg: var(--vp-c-grey-1);
+  --vp-custom-block-details-code-bg: var(--vp-c-grey-3);
 
-    /* --------- Badges -------- */
-    --vp-badge-info-border: var(--vp-c-blue-2);
-    --vp-badge-info-text: var(--vp-c-blue-1);
-    --vp-badge-info-bg: var(--vp-c-blue-3);
-    --vp-badge-tip-border: var(--vp-c-green-2);
-    --vp-badge-tip-text: var(--vp-c-green-1);
-    --vp-badge-tip-bg: var(--vp-c-green-3);
-    --vp-badge-warning-border: var(--vp-c-yellow-2);
-    --vp-badge-warning-text: var(--vp-c-yellow-1);
-    --vp-badge-warning-bg: var(--vp-c-yellow-3);
-    --vp-badge-danger-border: var(--vp-c-red-2);
-    --vp-badge-danger-text: var(--vp-c-red-1);
-    --vp-badge-danger-bg: var(--vp-c-red-3);
+  /* --------- Badges -------- */
+  --vp-badge-info-border: var(--vp-c-blue-2);
+  --vp-badge-info-text: var(--vp-c-blue-1);
+  --vp-badge-info-bg: var(--vp-c-blue-3);
+  --vp-badge-tip-border: var(--vp-c-green-2);
+  --vp-badge-tip-text: var(--vp-c-green-1);
+  --vp-badge-tip-bg: var(--vp-c-green-3);
+  --vp-badge-warning-border: var(--vp-c-yellow-2);
+  --vp-badge-warning-text: var(--vp-c-yellow-1);
+  --vp-badge-warning-bg: var(--vp-c-yellow-3);
+  --vp-badge-danger-border: var(--vp-c-red-2);
+  --vp-badge-danger-text: var(--vp-c-red-1);
+  --vp-badge-danger-bg: var(--vp-c-red-3);
 
-    /* ---------- Hero --------- */
-    --vp-home-hero-name-color: var(--vp-c-brand-1);
-    --vp-home-hero-name-background: transparent;
-    --vp-home-hero-image-background-image: none;
-    --vp-home-hero-image-filter: none;
+  /* ---------- Hero --------- */
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+  --vp-home-hero-name-background: transparent;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
 
-    /* --------- Layout -------- */
-    --vp-header-anchor-symbol: '#';
-    --vp-layout-max-width: 1440px;
+  /* --------- Layout -------- */
+  --vp-header-anchor-symbol: '#';
+  --vp-layout-max-width: 1440px;
 
-    /* ---------- Code --------- */
-    --vp-code-line-height: 1.7;
-    --vp-code-font-size: 0.875em;
-    --vp-code-color: var(--vp-c-brand-1);
-    --vp-code-link-color: var(--vp-c-brand-1);
-    --vp-code-link-hover-color: var(--vp-c-brand-2);
-    --vp-code-bg: var(--vp-c-default-soft);
-    --vp-code-block-color: var(--vp-c-text-2);
-    --vp-code-block-bg: var(--clr-primary-15);
-    --vp-code-block-divider-color: var(--clr-primary-15);
-    --vp-code-lang-color: var(--vp-c-text-3);
-    --vp-code-line-highlight-color: var(--vp-c-default-soft);
-    --vp-code-line-number-color: var(--vp-c-text-3);
-    --vp-code-line-diff-add-color: var(--vp-c-green-3);
-    --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
-    --vp-code-line-diff-remove-color: var(--vp-c-red-3);
-    --vp-code-line-diff-remove-symbol-color: var(--vp-c-red-2);
-    --vp-code-line-warning-color: var(--vp-c-yellow-1);
-    --vp-code-line-error-color: var(--vp-c-red-1);
-    --vp-code-copy-code-border-color: var(--vp-c-divider);
-    --vp-code-copy-code-bg: var(--vp-c-bg-soft);
-    --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
-    --vp-code-copy-code-hover-bg: var(--vp-c-bg-soft);
-    --vp-code-copy-code-active-text: var(--vp-c-text-2);
-    --vp-code-copy-copied-text-content: 'Copied';
-    --vp-code-tab-divider: var(--vp-code-block-divider-color);
-    --vp-code-tab-text-color: var(--vp-c-text-2);
-    --vp-code-tab-bg: var(--vp-code-block-bg);
-    --vp-code-tab-hover-text-color: var(--vp-c-text-1);
-    --vp-code-tab-active-text-color: var(--vp-c-text-1);
-    --vp-code-tab-active-bar-color: var(--vp-c-brand-1);
+  /* ---------- Code --------- */
+  --vp-code-line-height: 1.7;
+  --vp-code-font-size: 0.875em;
+  --vp-code-color: var(--vp-c-brand-1);
+  --vp-code-link-color: var(--vp-c-brand-1);
+  --vp-code-link-hover-color: var(--vp-c-brand-2);
+  --vp-code-bg: var(--vp-c-default-soft);
+  --vp-code-block-color: var(--vp-c-text-2);
+  --vp-code-block-bg: var(--vp-c-bg-elv);
+  --vp-code-block-divider-color: var(--vp-c-bg-elv);
+  --vp-code-lang-color: var(--vp-c-text-3);
+  --vp-code-line-highlight-color: var(--vp-c-default-soft);
+  --vp-code-line-number-color: var(--vp-c-text-3);
+  --vp-code-line-diff-add-color: var(--vp-c-green-3);
+  --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
+  --vp-code-line-diff-remove-color: var(--vp-c-red-3);
+  --vp-code-line-diff-remove-symbol-color: var(--vp-c-red-2);
+  --vp-code-line-warning-color: var(--vp-c-yellow-1);
+  --vp-code-line-error-color: var(--vp-c-red-1);
+  --vp-code-copy-code-border-color: var(--vp-c-divider);
+  --vp-code-copy-code-bg: var(--vp-c-bg-soft);
+  --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
+  --vp-code-copy-code-hover-bg: var(--vp-c-bg-soft);
+  --vp-code-copy-code-active-text: var(--vp-c-text-2);
+  --vp-code-copy-copied-text-content: 'Copied';
+  --vp-code-tab-divider: var(--vp-code-block-divider-color);
+  --vp-code-tab-text-color: var(--vp-c-text-2);
+  --vp-code-tab-bg: var(--vp-code-block-bg);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-1);
+  --vp-code-tab-active-text-color: var(--vp-c-text-1);
+  --vp-code-tab-active-bar-color: var(--vp-c-brand-1);
 
-    /* ---------- Ads ---------- */
-    --vp-carbon-ads-text-color: var(--vp-c-text-1);
-    --vp-carbon-ads-poweredby-color: var(--vp-c-text-2);
-    --vp-carbon-ads-bg-color: var(--vp-c-bg-soft);
-    --vp-carbon-ads-hover-text-color: var(--vp-c-brand-1);
-    --vp-carbon-ads-hover-poweredby-color: var(--vp-c-text-1);
+  /* ---------- Ads ---------- */
+  --vp-carbon-ads-text-color: var(--vp-c-text-1);
+  --vp-carbon-ads-poweredby-color: var(--vp-c-text-2);
+  --vp-carbon-ads-bg-color: var(--vp-c-bg-soft);
+  --vp-carbon-ads-hover-text-color: var(--vp-c-brand-1);
+  --vp-carbon-ads-hover-poweredby-color: var(--vp-c-text-1);
 
-    /* --------- Cards --------- */
-    --clr-card: var(--clr-primary-2-5);
-    --clr-card-hover: var(--clr-primary-5);
-    --clr-card-border: var(--clr-primary-10);
-    --card-shadow: 0 0 20px var(--clr-primary-5);
+  /* --------- Cards --------- */
+  --clr-card: var(--clr-primary-2-5);
+  --clr-card-hover: var(--clr-primary-5);
+  --clr-card-border: var(--clr-primary-10);
+  --card-shadow: 0 0 20px var(--clr-primary-5);
 
-    /* ------- BackToTop ------- */
-    --back-to-top-button: var(--clr-primary-0);
-    --back-to-top-button-hover: var(--clr-primary-2-5);
-    --back-to-top-chevron: var(--clr-primary-95);
-  }
+  /* ------- Scrollbar ------- */
+  --scrollbar-track: var(--clr-primary-15);
+  --scrollbar-thumb: var(--clr-primary-75);
+  --scrollbar-thumb-hover: var(--clr-primary-95);
+  --scrollbar-width: 7px;
 }
 
 body {
-  background-color: var(--clr-primary-10) !important;
+  background-color: var(--vp-c-bg) !important;
 }
 
 .container {
@@ -676,17 +672,17 @@ body {
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
 .VPNav {
-  background-color: var(--clr-primary-15) !important;
+  background-color: var(--vp-c-bg-elv) !important;
 }
 
 .VPNavBarTitle.has-sidebar .title {
-  background-color: var(--clr-primary-15) !important;
-  border-bottom: none !important;
+  background-color: var(--vp-c-bg-elv) !important;
+  border-bottom-color: transparent !important;
 }
 
 @media (max-width: 1023px) {
   .content-body {
-    background-color: var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
   }
 
   .VPSwitch {
@@ -703,8 +699,8 @@ body {
 
   .VPNav,
   .VPNavBar {
-    background-color: var(--clr-primary-15) !important;
-    border-bottom: 1px solid var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
+    border-bottom: transparent !important;
   }
 
   .VPNavBarTitle .title {
@@ -716,7 +712,7 @@ body {
     position: fixed;
     left: 0 !important;
     padding-left: 32px !important;
-    background-color: var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
     width: var(--vp-sidebar-width) !important;
   }
 
@@ -730,12 +726,12 @@ body {
   .VPNavBar .container .content .content-body {
     position: fixed !important;
     right: 32px !important;
-    background-color: var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
   }
 
   .VPNavScreen {
     top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) !important;
-    background-color: var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
   }
 
   .VPNavScreenAppearance {
@@ -758,7 +754,8 @@ body {
 }
 
 .DocSearch-Button {
-  background-color: var(--clr-primary-10) !important;
+  background-color: var(--docsearch-color) !important;
+  border: 1px solid var(--docsearch-border-color);
 }
 
 #docsearch {
@@ -784,13 +781,13 @@ body {
 }
 
 .DocSearch-Form {
-  background-color: var(--clr-primary-15) !important;
+  background-color: var(--vp-c-bg-elv) !important;
   border: 1px solid var(--clr-primary-25) !important;
 }
 
 .DocSearch-Modal {
   background-color: var(--clr-primary-10) !important;
-  border: 1px solid var(--clr-primary-15) !important;
+  border: 1px solid var(--vp-c-bg-elv) !important;
   box-shadow: none;
 }
 
@@ -815,7 +812,8 @@ body {
 
 @media (max-width: 767px) {
   .DocSearch-Button {
-    background-color: var(--clr-primary-15) !important;
+    background-color: var(--vp-c-bg-elv) !important;
+    border: none !important;
   }
 }
 
@@ -901,7 +899,7 @@ body {
   padding-top: 32px !important;
   padding-left: 32px;
   width: var(--vp-sidebar-width) !important;
-  background-color: var(--clr-primary-10) !important;
+  background-color: var(--vp-c-bg-elv) !important;
 }
 
 @media (min-width: 960px) {
@@ -924,7 +922,7 @@ body {
 }
 
 .VPLink p:hover {
-  background-color: var(--clr-primary-15) !important;
+  background-color: var(--vp-c-bg-elv) !important;
   color: var(--vp-c-text-2) !important;
   transition: color 0.3s;
   border-radius: 8px;
@@ -933,10 +931,6 @@ body {
 .VPContent.has-sidebar {
   padding-left: 0;
   padding-right: 0;
-}
-
-.VPNavBarTitle.has-sidebar .title {
-  border-bottom-color: var(--clr-primary-15) !important;
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -956,8 +950,8 @@ body {
 }
 
 .VPDocOutlineDropdown button {
-  background-color: var(--clr-primary-15) !important;
-  border: 1px solid var(--clr-primary-20) !important;
+  background-color: var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-divider) !important;
 }
 
 /* ------------------------- Hero ------------------------ */
@@ -975,8 +969,8 @@ body {
 
 /* ----------------------- Feature ----------------------- */
 .VPFeature {
-  background-color: var(--clr-primary-15) !important;
-  border: 1px solid var(--clr-primary-20) !important;
+  background-color: var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-divider) !important;
 }
 
 /* ----------------------- Curtains ---------------------- */
@@ -991,9 +985,9 @@ body {
 
 /* ------------------------- Code ------------------------ */
 .vp-code-group .tabs {
-  border-top: 1px solid var(--clr-primary-20);
-  border-left: 1px solid var(--clr-primary-20);
-  border-right: 1px solid var(--clr-primary-20);
+  border-top: 1px solid var(--vp-c-divider);
+  border-left: 1px solid var(--vp-c-divider);
+  border-right: 1px solid var(--vp-c-divider);
 }
 
 @media (min-width: 280px) {
@@ -1001,7 +995,7 @@ body {
   .vp-doc div[class*='language-'],
   .vp-block {
     margin: 16px 0;
-    border: 1px solid var(--clr-primary-20);
+    border: 1px solid var(--vp-c-divider);
     border-radius: 8px;
   }
 
@@ -1050,7 +1044,7 @@ body {
 }
 
 .custom-block.details {
-  border: 1px solid var(--clr-primary-30) !important;
+  border: 1px solid var(--vp-c-border) !important;
 }
 
 .custom-block.info,
