@@ -671,10 +671,6 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
-header {
-  border-bottom: 1px solid var(--vp-c-gray-3) !important;
-}
-
 .VPNav {
   background-color: var(--vp-c-bg-elv) !important;
 }
@@ -700,6 +696,10 @@ header {
 }
 
 @media (min-width: 1024px) {
+  header {
+    border-bottom: 1px solid var(--vp-c-gray-3) !important;
+  }
+
   .VPNav,
   .VPNavBar {
     background-color: var(--vp-c-bg-elv) !important;
@@ -787,6 +787,13 @@ header {
   background-color: var(--vp-c-bg-elv) !important;
   border: 1px solid var(--clr-primary-25) !important;
 }
+
+@media (min-width: 280px) and (max-width: 460px) {
+  .DocSearch-Form {
+    height: 45px;
+  }
+}
+
 
 .DocSearch-Modal {
   background-color: var(--clr-primary-10) !important;
