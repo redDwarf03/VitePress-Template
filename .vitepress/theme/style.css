@@ -920,8 +920,13 @@ header {
   top: var(--vp-nav-height) !important;
   padding-top: 32px !important;
   padding-left: 32px;
-  background-color: var(--vp-c-bg-elv) !important;
+  background-color: var(--vp-c-bg) !important;
   border-right: 1px solid var(--vp-c-gray-3) !important;
+}
+
+.VPSidebarItem.is-active > .item .link > .text:hover {
+  color: var(--vp-c-brand-1) !important;
+  background-color: var(--vp-c-bg-elv) !important;
 }
 
 @media (min-width: 1024px) {
