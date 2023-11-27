@@ -671,6 +671,10 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
+header {
+  border-bottom: 1px solid var(--vp-c-gray-3) !important;
+}
+
 .VPNav {
   background-color: var(--vp-c-bg-elv) !important;
 }
@@ -696,11 +700,10 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   .VPNav,
   .VPNavBar {
     background-color: var(--vp-c-bg-elv) !important;
-    border-bottom: transparent !important;
+    height: var(--vp-nav-height) + 1px !important;
   }
 
   .VPNavBarTitle .title {
