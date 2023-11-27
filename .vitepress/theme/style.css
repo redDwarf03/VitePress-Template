@@ -320,8 +320,8 @@
 
   /* ------- Scrollbar ------- */
   --scrollbar-track: var(--clr-primary-15);
-  --scrollbar-thumb: var(--clr-primary-75);
-  --scrollbar-thumb-hover: var(--clr-primary-95);
+  --scrollbar-thumb: var(--clr-primary-25);
+  --scrollbar-thumb-hover: var(--clr-primary-35);
   --scrollbar-width: 7px;
 }
 
@@ -628,9 +628,9 @@
   --card-shadow: 0 0 20px var(--clr-primary-5);
 
   /* ------- Scrollbar ------- */
-  --scrollbar-track: var(--clr-primary-15);
-  --scrollbar-thumb: var(--clr-primary-75);
-  --scrollbar-thumb-hover: var(--clr-primary-95);
+  --scrollbar-track: var(--clr-primary-5);
+  --scrollbar-thumb: var(--clr-primary-15);
+  --scrollbar-thumb-hover: var(--clr-primary-25);
   --scrollbar-width: 7px;
 }
 
