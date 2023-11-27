@@ -713,6 +713,7 @@ header {
   .VPNavBar {
     background-color: var(--vp-c-bg-primary) !important;
     height: var(--vp-nav-height) + 1px !important;
+    border-bottom-color: transparent !important;
   }
 
   .VPNavBarTitle .title {
