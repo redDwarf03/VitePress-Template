@@ -680,6 +680,14 @@ body {
   border-bottom-color: transparent !important;
 }
 
+.DocSearch-Modal header {
+  border-bottom: transparent !important;
+}
+
+header {
+  border-bottom: 1px solid var(--vp-c-gray-3) !important;
+}
+
 @media (max-width: 1023px) {
   .content-body {
     background-color: var(--vp-c-bg-elv) !important;
@@ -700,13 +708,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .DocSearch-Modal header {
-    border-bottom: transparent !important;
-  }
-
-  header {
-    border-bottom: 1px solid var(--vp-c-gray-3) !important;
-  }
 
   .VPNav,
   .VPNavBar {
