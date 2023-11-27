@@ -599,8 +599,8 @@
   --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
   --vp-code-line-diff-remove-color: var(--vp-c-red-3);
   --vp-code-line-diff-remove-symbol-color: var(--vp-c-red-2);
-  --vp-code-line-warning-color: var(--vp-c-yellow-1);
-  --vp-code-line-error-color: var(--vp-c-red-1);
+  --vp-code-line-warning-color: var(--vp-c-yellow-2);
+  --vp-code-line-error-color: var(--vp-c-red-2);
   --vp-code-copy-code-border-color: var(--vp-c-divider);
   --vp-code-copy-code-bg: var(--vp-c-bg-soft);
   --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
