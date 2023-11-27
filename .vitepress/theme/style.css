@@ -59,9 +59,9 @@
   --vp-c-grey-3: var(--clr-primary-30);
   --vp-c-grey-soft: var(--clr-primary-45);
   --vp-c-purple-1: hsl(300, 50%, 65%);
-  --vp-c-purple-2: hsl(300, 50%, 30%);
+  --vp-c-purple-2: hsl(300, 50%, 35%);
   --vp-c-purple-3: hsl(300, 50%, 15%);
-  --vp-c-purple-soft: hsl(300, 50%, 35%);
+  --vp-c-purple-soft: hsl(300, 50%, 40%);
   --vp-c-blue-1: hsl(200, 50%, 65%);
   --vp-c-blue-2: hsl(200, 50%, 30%);
   --vp-c-blue-3: hsl(200, 50%, 15%);
@@ -378,15 +378,15 @@
   --vp-c-gray-1: var(--clr-primary-15);
   --vp-c-gray-2: var(--clr-primary-20);
   --vp-c-gray-3: var(--clr-primary-10);
-  --vp-c-gray-soft: var(--clr-primary-5);
+  --vp-c-gray-soft: var(--clr-primary-2-5);
   --vp-c-grey-1: var(--clr-primary-5);
   --vp-c-grey-2: var(--clr-primary-55);
-  --vp-c-grey-3: var(--clr-primary-20);
+  --vp-c-grey-3: var(--clr-primary-10);
   --vp-c-grey-soft: var(--clr-primary-35);
-  --vp-c-purple-1: hsl(300, 50%, 35%);
-  --vp-c-purple-2: hsl(300, 50%, 70%);
-  --vp-c-purple-3: hsl(300, 50%, 85%);
-  --vp-c-purple-soft: hsl(300, 50%, 75%);
+  --vp-c-purple-1: hsl(300, 50%, 65%);
+  --vp-c-purple-2: hsl(300, 50%, 35%);
+  --vp-c-purple-3: hsl(300, 50%, 15%);
+  --vp-c-purple-soft: hsl(300, 50%, 40%);
   --vp-c-blue-1: hsl(200, 50%, 35%);
   --vp-c-blue-2: hsl(200, 50%, 70%);
   --vp-c-blue-3: hsl(200, 50%, 85%);
@@ -413,10 +413,10 @@
   --vp-c-text-2: var(--clr-primary-70);
   --vp-c-text-3: var(--clr-primary-50);
 
-  --vp-c-bg: var(--clr-primary-2-5);
-  --vp-c-bg-alt: var(--clr-primary-2-5);
-  --vp-c-bg-elv: var(--clr-primary-5);
-  --vp-c-bg-soft: var(--clr-primary-5);
+  --vp-c-bg: var(--clr-primary-0);
+  --vp-c-bg-alt: var(--clr-primary-0);
+  --vp-c-bg-elv: var(--clr-primary-2-5);
+  --vp-c-bg-soft: var(--clr-primary-2-5);
 
   --vp-c-border: var(--clr-primary-20);
   --vp-c-divider: var(--clr-primary-10);
@@ -462,7 +462,7 @@
   --vp-input-switch-bg-color: var(--vp-c-gray-soft);
 
   /* --------- Search -------- */
-  --docsearch-color: var(--clr-primary-2-5);
+  --docsearch-color: var(--clr-primary-0);
   --docsearch-border-color: var(--clr-primary-10);
   --docsearch-primary-color: var(--vp-c-brand-1);
   --docsearch-text-color: var(--clr-primary-85);
@@ -510,11 +510,11 @@
   /* ----- Frames & Badges ---- */
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-3: var(--vp-c-gray-1);
   --vp-c-default-soft: var(--vp-c-gray-soft);
-  --vp-c-brand-1: var(--vp-c-purple-2);
-  --vp-c-brand-2: var(--vp-c-purple-1);
-  --vp-c-brand-3: var(--vp-c-purple-1);
+  --vp-c-brand-1: var(--vp-c-purple-1);
+  --vp-c-brand-2: var(--vp-c-purple-2);
+  --vp-c-brand-3: var(--vp-c-purple-3);
   --vp-c-brand-soft: var(--vp-c-purple-soft);
   --vp-c-brand: var(--vp-c-brand-2);
   --vp-c-info-1: var(--vp-c-blue-1);
@@ -622,7 +622,7 @@
   --vp-carbon-ads-hover-poweredby-color: var(--vp-c-text-1);
 
   /* --------- Cards --------- */
-  --clr-card: var(--clr-primary-2-5);
+  --clr-card: var(--clr-primary-0);
   --clr-card-hover: var(--clr-primary-5);
   --clr-card-border: var(--clr-primary-10);
   --card-shadow: 0 0 20px var(--clr-primary-5);
@@ -687,7 +687,7 @@ body {
 
   .VPSwitch {
     border: 0 !important;
-    background-color: var(--clr-primary-25) !important;
+    background-color: var(--vp-c-gray-3) !important;
   }
 
   .check {
@@ -740,7 +740,7 @@ body {
 
   .VPSwitch {
     border: 0 !important;
-    background-color: var(--clr-primary-25) !important;
+    background-color: var(--vp-c-gray-3) !important;
   }
 
   .check {
@@ -955,6 +955,23 @@ body {
 }
 
 /* ------------------------- Hero ------------------------ */
+.VPButton.brand {
+  background-color: var(--vp-c-brand) !important;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-soft) !important;
+}
+
+.VPButton.alt {
+  border: 1px solid var(--vp-c-divider) !important;
+  background-color: var(--vp-c-bg-elv-2) !important;
+}
+
+.VPButton.alt:hover {
+  background-color: var(--vp-c-bg-elv) !important;
+}
+
 @media (min-width: 1280px) {
   .VPHero {
     padding-top: 10% !important;
