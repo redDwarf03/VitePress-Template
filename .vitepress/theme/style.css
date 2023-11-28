@@ -35,7 +35,7 @@
     --vp-c-gray-soft: var(--clr-primary-15);
     --vp-c-grey-1: var(--clr-primary-15);
     --vp-c-grey-2: var(--clr-primary-65);
-    --vp-c-grey-3: var(--clr-primary-30);
+    --vp-c-grey-3: var(--clr-primary-20);
     --vp-c-grey-soft: var(--clr-primary-45);
     --vp-c-purple-1: hsl(300, 50%, 65%);
     --vp-c-purple-2: hsl(300, 50%, 35%);
@@ -75,6 +75,7 @@
 
     --vp-c-border: var(--clr-primary-30);
     --vp-c-divider: var(--clr-primary-20);
+    --vp-c-divider-2: var(--clr-primary-25);
     --vp-c-gutter: var(--clr-primary-90);
 
     /* -------- Brand -------- */
@@ -389,6 +390,7 @@
 
   --vp-c-border: var(--clr-primary-20);
   --vp-c-divider: var(--clr-primary-10);
+  --vp-c-divider-2: var(--clr-primary-15);
   --vp-c-gutter: var(--clr-primary-90);
 
   /* -------- Brand -------- */
@@ -1028,6 +1030,14 @@ body {
 
 .vp-doc :not(pre) > code {
   border: 1px solid var(--vp-c-divider);
+}
+
+.custom-block.details code {
+  border: 1px solid var(--vp-c-divider-2) !important;
+}
+
+.custom-block.details .vp-adaptive-theme code {
+  border: 1px solid var(--vp-c-bg-primary) !important;
 }
 
 @media (min-width: 280px) {
