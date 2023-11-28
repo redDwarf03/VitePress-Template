@@ -162,6 +162,16 @@
     --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
     --search-background: hsla(210, 15%, 5%, 0.5);
 
+    /* ---------- Hero --------- */
+    --vp-home-hero-name-color: var(--vp-c-brand-1);
+    --vp-home-hero-name-background: transparent;
+    --vp-home-hero-image-background-image: none;
+    --vp-home-hero-image-filter: none;
+
+    /* --------- Layout -------- */
+    --vp-header-anchor-symbol: "#";
+    --vp-layout-max-width: 1440px;
+
     /* -------- SideBar -------- */
     --vp-sidebar-width: 300px;
     --vp-sidebar-bg-color: var(--vp-c-bg-alt);
@@ -233,16 +243,6 @@
     --vp-badge-danger-border: var(--vp-c-red-2);
     --vp-badge-danger-text: var(--vp-c-red-1);
     --vp-badge-danger-bg: var(--vp-c-red-3);
-
-    /* ---------- Hero --------- */
-    --vp-home-hero-name-color: var(--vp-c-brand-1);
-    --vp-home-hero-name-background: transparent;
-    --vp-home-hero-image-background-image: none;
-    --vp-home-hero-image-filter: none;
-
-    /* --------- Layout -------- */
-    --vp-header-anchor-symbol: "#";
-    --vp-layout-max-width: 1440px;
 
     /* ---------- Code --------- */
     --vp-code-line-height: 1.7;
@@ -476,6 +476,16 @@
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
   --search-background: hsla(210, 15%, 5%, 0.5);
 
+  /* ---------- Hero --------- */
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+  --vp-home-hero-name-background: transparent;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+
+  /* --------- Layout -------- */
+  --vp-header-anchor-symbol: "#";
+  --vp-layout-max-width: 1440px;
+
   /* -------- SideBar -------- */
   --vp-sidebar-width: 300px;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
@@ -547,16 +557,6 @@
   --vp-badge-danger-border: var(--vp-c-red-2);
   --vp-badge-danger-text: var(--vp-c-red-1);
   --vp-badge-danger-bg: var(--vp-c-red-3);
-
-  /* ---------- Hero --------- */
-  --vp-home-hero-name-color: var(--vp-c-brand-1);
-  --vp-home-hero-name-background: transparent;
-  --vp-home-hero-image-background-image: none;
-  --vp-home-hero-image-filter: none;
-
-  /* --------- Layout -------- */
-  --vp-header-anchor-symbol: "#";
-  --vp-layout-max-width: 1440px;
 
   /* ---------- Code --------- */
   --vp-code-line-height: 1.7;
@@ -825,76 +825,34 @@ body {
   padding-top: 6px !important;
 }
 
-/* ----------------------- LocalNav ---------------------- */
-.VPLocalNav {
-  top: -1px !important;
-  border: none !important;
+/* ------------------------- Hero ------------------------ */
+.VPButton.brand {
+  background-color: var(--vp-c-brand) !important;
 }
 
-@media (min-width: 767px) and (max-width: 959px) {
-  .VPLocalNavOutlineDropdown {
-    padding: 12px 32px 11px !important;
-  }
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-soft) !important;
 }
 
-.VPLocalNavOutlineDropdown .items {
-  gap: 0 !important;
-  background-color: transparent !important;
-  border: 1px solid var(--clr-primary-25) !important;
+.VPButton.alt {
+  border: 1px solid var(--vp-c-divider) !important;
+  background-color: var(--vp-c-bg-primary-2) !important;
 }
 
-@media (min-width: 280px) and (max-width: 460px) {
-  .items {
-    top: 46px !important;
-    left: 24px !important;
-    right: 24px !important;
-  }
+.VPButton.alt:hover {
+  background-color: var(--vp-c-bg-primary) !important;
+}
 
-  .header .top-link {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
-
-  .nested {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
-
-  .outline {
-    padding-bottom: 16px !important;
+@media (min-width: 1280px) {
+  .VPHero {
+    padding-top: 10% !important;
   }
 }
 
-@media (min-width: 461px) and (max-width: 1023px) {
-  .items {
-    top: 46px !important;
-    left: 32px !important;
-    right: 32px !important;
+@media (width: 1024px) {
+  .VPHero {
+    padding-top: 30% !important;
   }
-
-  .header .top-link {
-    padding-top: 8px !important;
-    padding-left: 32px !important;
-    padding-right: 32px !important;
-  }
-
-  .nested {
-    padding-left: 32px !important;
-    padding-right: 32px !important;
-  }
-
-  .outline {
-    padding-bottom: 16px !important;
-  }
-}
-
-.outline {
-  padding-top: 16px;
-  margin-top: -16px;
-}
-
-.outline-title {
-  color: var(--vp-c-brand-1) !important;
 }
 
 /* ----------------------- SideBar ----------------------- */
@@ -973,34 +931,76 @@ body {
   border: 1px solid var(--vp-c-divider) !important;
 }
 
-/* ------------------------- Hero ------------------------ */
-.VPButton.brand {
-  background-color: var(--vp-c-brand) !important;
+/* ----------------------- LocalNav ---------------------- */
+.VPLocalNav {
+  top: -1px !important;
+  border: none !important;
 }
 
-.VPButton.brand:hover {
-  background-color: var(--vp-c-brand-soft) !important;
-}
-
-.VPButton.alt {
-  border: 1px solid var(--vp-c-divider) !important;
-  background-color: var(--vp-c-bg-primary-2) !important;
-}
-
-.VPButton.alt:hover {
-  background-color: var(--vp-c-bg-primary) !important;
-}
-
-@media (min-width: 1280px) {
-  .VPHero {
-    padding-top: 10% !important;
+@media (min-width: 767px) and (max-width: 959px) {
+  .VPLocalNavOutlineDropdown {
+    padding: 12px 32px 11px !important;
   }
 }
 
-@media (width: 1024px) {
-  .VPHero {
-    padding-top: 30% !important;
+.VPLocalNavOutlineDropdown .items {
+  gap: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid var(--clr-primary-25) !important;
+}
+
+@media (min-width: 280px) and (max-width: 460px) {
+  .items {
+    top: 46px !important;
+    left: 24px !important;
+    right: 24px !important;
   }
+
+  .header .top-link {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .nested {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .outline {
+    padding-bottom: 16px !important;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .items {
+    top: 46px !important;
+    left: 32px !important;
+    right: 32px !important;
+  }
+
+  .header .top-link {
+    padding-top: 8px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .nested {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .outline {
+    padding-bottom: 16px !important;
+  }
+}
+
+.outline {
+  padding-top: 16px;
+  margin-top: -16px;
+}
+
+.outline-title {
+  color: var(--vp-c-brand-1) !important;
 }
 
 /* ----------------------- Feature ----------------------- */
