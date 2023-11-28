@@ -351,9 +351,9 @@
   --vp-c-grey-2: var(--clr-primary-55);
   --vp-c-grey-3: var(--clr-primary-10);
   --vp-c-grey-soft: var(--clr-primary-35);
-  --vp-c-purple-1: hsl(300, 50%, 65%);
+  --vp-c-purple-1: hsl(300, 50%, 55%);
   --vp-c-purple-2: hsl(300, 50%, 35%);
-  --vp-c-purple-3: hsl(300, 50%, 15%);
+  --vp-c-purple-3: hsl(300, 50%, 5%);
   --vp-c-purple-soft: hsl(300, 50%, 40%);
   --vp-c-blue-1: hsl(200, 50%, 35%);
   --vp-c-blue-2: hsl(200, 50%, 70%);
@@ -1024,6 +1024,10 @@ body {
   border-top: 1px solid var(--vp-c-divider);
   border-left: 1px solid var(--vp-c-divider);
   border-right: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc :not(pre) > code {
+  border: 1px solid var(--vp-c-divider);
 }
 
 @media (min-width: 280px) {
