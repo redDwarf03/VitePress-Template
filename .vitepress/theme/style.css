@@ -164,7 +164,7 @@
     --search-background: hsla(210, 15%, 5%, 0.5);
 
     /* -------- SideBar -------- */
-    --vp-sidebar-width: 272px;
+    --vp-sidebar-width: 300px;
     --vp-sidebar-bg-color: var(--vp-c-bg-alt);
 
     /* -------- LocalNav ------- */
