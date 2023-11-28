@@ -4,28 +4,6 @@
   font-family: "Poppins", monospace;
   /* ------------------------------------------------------ Colors ------------------------------------------------------ */
   /* ------------------------ Global ----------------------- */
-  --clr-neutral-0: hsl(0, 0%, 0%);
-  --clr-neutral-5: hsl(0, 0%, 5%);
-  --clr-neutral-10: hsl(0, 0%, 10%);
-  --clr-neutral-15: hsl(0, 0%, 15%);
-  --clr-neutral-20: hsl(0, 0%, 20%);
-  --clr-neutral-25: hsl(0, 0%, 25%);
-  --clr-neutral-30: hsl(0, 0%, 30%);
-  --clr-neutral-35: hsl(0, 0%, 35%);
-  --clr-neutral-40: hsl(0, 0%, 40%);
-  --clr-neutral-45: hsl(0, 0%, 45%);
-  --clr-neutral-50: hsl(0, 0%, 50%);
-  --clr-neutral-55: hsl(0, 0%, 55%);
-  --clr-neutral-60: hsl(0, 0%, 60%);
-  --clr-neutral-65: hsl(0, 0%, 65%);
-  --clr-neutral-70: hsl(0, 0%, 70%);
-  --clr-neutral-75: hsl(0, 0%, 75%);
-  --clr-neutral-80: hsl(0, 0%, 80%);
-  --clr-neutral-85: hsl(0, 0%, 85%);
-  --clr-neutral-90: hsl(0, 0%, 90%);
-  --clr-neutral-95: hsl(0, 0%, 95%);
-  --clr-neutral-100: hsl(0, 0%, 100%);
-
   --clr-primary-0: hsl(210, 15%, 0%);
   --clr-primary-5: hsl(210, 15%, 5%);
   --clr-primary-10: hsl(210, 15%, 10%);
@@ -269,7 +247,7 @@
   --vp-code-block-bg: var(--clr-primary-15);
   --vp-code-block-divider-color: var(--clr-primary-15);
   --vp-code-lang-color: var(--vp-c-text-3);
-  --vp-code-line-highlight-color: var(--vp-c-default-soft);
+  --vp-code-line-highlight-color: var(--vp-c-gray-3);
   --vp-code-line-number-color: var(--vp-c-text-3);
   --vp-code-line-diff-add-color: var(--vp-c-green-3);
   --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
@@ -329,28 +307,6 @@
 :root {
   /* ------------------------------------------------------ Colors ------------------------------------------------------ */
   /* ------------------------ Global ----------------------- */
-  --clr-neutral-0: hsl(0, 0%, 100%);
-  --clr-neutral-5: hsl(0, 0%, 95%);
-  --clr-neutral-10: hsl(0, 0%, 90%);
-  --clr-neutral-15: hsl(0, 0%, 85%);
-  --clr-neutral-20: hsl(0, 0%, 80%);
-  --clr-neutral-25: hsl(0, 0%, 75%);
-  --clr-neutral-30: hsl(0, 0%, 70%);
-  --clr-neutral-35: hsl(0, 0%, 65%);
-  --clr-neutral-40: hsl(0, 0%, 60%);
-  --clr-neutral-45: hsl(0, 0%, 55%);
-  --clr-neutral-50: hsl(0, 0%, 50%);
-  --clr-neutral-55: hsl(0, 0%, 45%);
-  --clr-neutral-60: hsl(0, 0%, 40%);
-  --clr-neutral-65: hsl(0, 0%, 35%);
-  --clr-neutral-70: hsl(0, 0%, 30%);
-  --clr-neutral-75: hsl(0, 0%, 25%);
-  --clr-neutral-80: hsl(0, 0%, 20%);
-  --clr-neutral-85: hsl(0, 0%, 15%);
-  --clr-neutral-90: hsl(0, 0%, 10%);
-  --clr-neutral-95: hsl(0, 0%, 5%);
-  --clr-neutral-100: hsl(0, 0%, 0%);
-
   --clr-primary-0: hsl(210, 15%, 100%);
   --clr-primary-2-5: hsl(210, 15%, 97.5%);
   --clr-primary-5: hsl(210, 15%, 95%);
@@ -503,7 +459,7 @@
   --search-background: hsla(210, 15%, 5%, 0.5);
 
   /* -------- SideBar -------- */
-  --vp-sidebar-width: 272px;
+  --vp-sidebar-width: 300px;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
 
   /* -------- LocalNav ------- */
@@ -595,7 +551,7 @@
   --vp-code-block-bg: var(--vp-c-bg-primary);
   --vp-code-block-divider-color: var(--vp-c-bg-primary);
   --vp-code-lang-color: var(--vp-c-text-3);
-  --vp-code-line-highlight-color: var(--vp-c-default-soft);
+  --vp-code-line-highlight-color: var(--vp-c-gray-3);
   --vp-code-line-number-color: var(--vp-c-text-3);
   --vp-code-line-diff-add-color: var(--vp-c-green-3);
   --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
@@ -971,7 +927,7 @@ body {
   padding-right: 0;
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .content {
     padding: 0 0 128px 0 !important;
   }
@@ -1092,6 +1048,10 @@ body {
 
 .vp-doc [class*='language-']>button.copy {
   background-color: var(--vp-code-copy-code-bg);
+}
+
+.vp-doc [class*=language-] code .highlighted {
+  background-color: var(--vp-code-line-highlight-color) !important;
 }
 
 .vp-doc a:hover {
