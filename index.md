@@ -19,18 +19,22 @@ hero:
 
 # Features section
 features:
-  - icon: ⚡️
-    title: CodeBox, The DX that can't be beat
+  - icon: ⚡
+    title: What is VitePress?
     details: Lorem ipsum...
-  - icon: 🎉
-    title: Power of Vue meets Markdown
+    link: /docs/guide/what-is-vitepress
+  - icon: ✏️
+    title: Markdown Extensions
     details: Lorem ipsum...
-  - icon: 🔥
-    title: Simple and minimal, always
+    link: /docs/guide/markdown
+  - icon: 🎨
+    title: Using a Custom Theme
     details: Lorem ipsum...
-  - icon: 🎀
-    title: Stylish and cool
+    link: /docs/guide/custom-theme
+  - icon: 🏗️
+    title: MPA Mode
     details: Lorem ipsum...
+    link: /docs/guide/mpa-mode
 
 # Meta property
 head:
