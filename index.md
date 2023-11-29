@@ -21,19 +21,19 @@ hero:
 features:
   - icon: ⚡
     title: What is VitePress?
-    details: Lorem ipsum...
+    details: Dolor sit amet, consectetur adipiscing elit.
     link: /docs/guide/what-is-vitepress
   - icon: ✏️
     title: Markdown Extensions
-    details: Lorem ipsum...
+    details: Dolor sit amet, consectetur adipiscing elit.
     link: /docs/guide/markdown
   - icon: 🎨
     title: Using a Custom Theme
-    details: Lorem ipsum...
+    details: Dolor sit amet, consectetur adipiscing elit.
     link: /docs/guide/custom-theme
   - icon: 🏗️
     title: MPA Mode
-    details: Lorem ipsum...
+    details: Dolor sit amet, consectetur adipiscing elit.
     link: /docs/guide/mpa-mode
 
 # Meta property

@@ -692,6 +692,7 @@ body {
 
   .check {
     top: 2px !important;
+    left: 2px !important;
   }
 }
 
@@ -751,6 +752,7 @@ body {
 
   .check {
     top: 2px !important;
+    left: 2px !important;
   }
 }
 
@@ -859,16 +861,16 @@ body {
   transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
-.VPFeature .box {
+.VPFeature {
+  background-color: var(--vp-c-bg-primary) !important;
+  border: 1px solid var(--vp-c-divider) !important;
   border-radius: 12px !important;
-  background-color: var(--vp-c-grey-1) !important;
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s, border-radius 0.25s, transform 0.25s !important;
 }
 
-.VPFeature .box:hover {
-  border-radius: 12px !important;
-  background-color: var(--vp-c-grey-2) !important;
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+.VPFeature:hover {
+  border-radius: 10px !important;
+  transform: translateY(-4px);
 }
 
 .VPFeature .icon {
@@ -882,9 +884,10 @@ body {
 }
 
 .VPFeature p.details {
-  padding-left: 0 !important;
   padding-top: 12px !important;
-  padding-bottom: 12px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 2px !important;
 }
 
 .VPFeature p.details:hover {
@@ -1062,12 +1065,6 @@ body {
 
 .outline-title {
   color: var(--vp-c-brand-1) !important;
-}
-
-/* ----------------------- Feature ----------------------- */
-.VPFeature {
-  background-color: var(--vp-c-bg-primary) !important;
-  border: 1px solid var(--vp-c-border) !important;
 }
 
 /* ----------------------- Curtains ---------------------- */
