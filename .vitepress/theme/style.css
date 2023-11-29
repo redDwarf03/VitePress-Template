@@ -1061,19 +1061,19 @@ article p.details {
 }
 
 .info.custom-block :not(pre) > code {
-  border: 1px solid var(--vp-c-info-2) !important;
+  border: 1px solid var(--vp-custom-block-info-border) !important;
 }
 
 .tip.custom-block :not(pre) > code {
-  border: 1px solid var(--vp-c-tip-2) !important;
+  border: 1px solid var(--vp-custom-block-tip-border) !important;
 }
 
 .warning.custom-block :not(pre) > code {
-  border: 1px solid var(--vp-c-warning-2) !important;
+  border: 1px solid var(--vp-custom-block-warning-border) !important;
 }
 
 .danger.custom-block :not(pre) > code {
-  border: 1px solid var(--vp-c-danger-2) !important;
+  border: 1px solid var(--vp-custom-block-danger-border) !important;
 }
 
 .custom-block.details {
