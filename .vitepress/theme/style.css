@@ -264,8 +264,8 @@
     --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
     --vp-code-line-diff-remove-color: var(--vp-c-red-3);
     --vp-code-line-diff-remove-symbol-color: var(--vp-c-red-2);
-    --vp-code-line-warning-color: var(--vp-c-yellow-2);
-    --vp-code-line-error-color: var(--vp-c-red-2);
+    --vp-code-line-warning-color: var(--vp-c-yellow-3);
+    --vp-code-line-error-color: var(--vp-c-red-3);
     --vp-code-copy-code-border-color: var(--vp-c-divider);
     --vp-code-copy-code-bg: var(--vp-c-bg-soft);
     --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
@@ -581,8 +581,8 @@
   --vp-code-line-diff-add-symbol-color: var(--vp-c-green-2);
   --vp-code-line-diff-remove-color: var(--vp-c-red-3);
   --vp-code-line-diff-remove-symbol-color: var(--vp-c-red-2);
-  --vp-code-line-warning-color: var(--vp-c-yellow-2);
-  --vp-code-line-error-color: var(--vp-c-red-2);
+  --vp-code-line-warning-color: var(--vp-c-yellow-3);
+  --vp-code-line-error-color: var(--vp-c-red-3);
   --vp-code-copy-code-border-color: var(--vp-c-divider);
   --vp-code-copy-code-bg: var(--vp-c-bg-soft);
   --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
@@ -668,6 +668,10 @@ body {
 
 .VPMenu {
   background-color: var(--vp-c-bg-primary) !important;
+}
+
+.check .icon {
+  background-color: var(--vp-c-bg) !important;
 }
 
 @media (max-width: 1023px) {
@@ -1040,6 +1044,27 @@ body {
   border: 1px solid var(--vp-c-divider);
 }
 
+.info.custom-block :not(pre) > code {
+  border: 1px solid var(--vp-c-info-2) !important;
+}
+
+.tip.custom-block :not(pre) > code {
+  border: 1px solid var(--vp-c-tip-2) !important;
+}
+
+.warning.custom-block :not(pre) > code {
+  border: 1px solid var(--vp-c-warning-2) !important;
+}
+
+.danger.custom-block :not(pre) > code {
+  border: 1px solid var(--vp-c-danger-2) !important;
+}
+
+
+.custom-block.details {
+  background-color: var(--vp-c-grey-1) !important;
+}
+
 .custom-block.details code {
   border: 1px solid var(--vp-c-divider-alt) !important;
 }
@@ -1098,6 +1123,14 @@ body {
 
 .vp-doc [class*="language-"] code .highlighted {
   background-color: var(--vp-code-line-highlight-color) !important;
+}
+
+.vp-doc [class*="language-"] code .highlighted.warning {
+  background-color: var(--vp-code-line-warning-color) !important;
+}
+
+.vp-doc [class*="language-"] code .highlighted.error {
+  background-color: var(--vp-code-line-error-color) !important;
 }
 
 .vp-doc a:hover {
