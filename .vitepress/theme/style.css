@@ -853,8 +853,8 @@ body {
   background-color: var(--vp-c-bg-primary) !important;
 }
 
-.icon {
-  background-color: var(--vp-c-gray-1) !important;
+article .icon {
+  background-color: var(--vp-c-gray-2) !important;
 }
 
 article p.details {
