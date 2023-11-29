@@ -37,7 +37,7 @@
     --vp-c-grey-1: var(--vp-c-gray-1);
     --vp-c-grey-2: var(--vp-c-gray-2);
     --vp-c-grey-3: var(--clr-primary-45);
-    --vp-c-grey-soft: var(--clr-primary-60);
+    --vp-c-grey-soft: var(--clr-primary-65);
 
     --vp-c-white: #ffffff;
     --vp-c-black: #000000;
@@ -354,7 +354,7 @@
   --vp-c-grey-1: var(--vp-c-gray-1);
   --vp-c-grey-2: var(--vp-c-gray-2);
   --vp-c-grey-3: var(--clr-primary-45);
-  --vp-c-grey-soft: var(--clr-primary-60);
+  --vp-c-grey-soft: var(--clr-primary-65);
 
   --vp-c-white: #ffffff;
   --vp-c-black: #000000;
@@ -957,7 +957,7 @@ article p.details {
 }
 
 .modal-button {
-  background-color: var(--vp-c-grey-1) !important;
+  background-color: var(--vp-c-grey-2) !important;
   border: 1px solid var(--vp-c-divider) !important;
 }
 
@@ -1080,12 +1080,8 @@ article p.details {
   background-color: var(--vp-c-grey-1) !important;
 }
 
-.custom-block.details code {
-  border: 1px solid var(--vp-c-divider-alt) !important;
-}
-
-.custom-block.details .vp-adaptive-theme code {
-  border: 1px solid var(--vp-c-bg-primary) !important;
+.custom-block.details pre {
+  background-color: var(--vp-c-bg-default) !important;
 }
 
 @media (min-width: 280px) {
