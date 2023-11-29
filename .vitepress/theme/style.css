@@ -838,27 +838,57 @@ body {
 /* ------------------------- Hero ------------------------ */
 .VPButton.brand {
   background-color: var(--vp-c-brand) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .VPButton.brand:hover {
   background-color: var(--vp-c-brand-soft) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .VPButton.alt {
   border: 1px solid var(--vp-c-divider) !important;
   background-color: var(--vp-c-bg-primary-2) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .VPButton.alt:hover {
   background-color: var(--vp-c-bg-primary) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
-article .icon {
-  background-color: var(--vp-c-gray-2) !important;
+.VPFeature .box {
+  border-radius: 12px !important;
+  background-color: var(--vp-c-grey-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
-article p.details {
+.VPFeature .box:hover {
+  border-radius: 12px !important;
+  background-color: var(--vp-c-grey-2) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.VPFeature .icon {
+  margin-left: -12px;
+  margin-bottom: 6px !important;
+  background-color: transparent !important;
+}
+
+.VPFeature .icon:hover {
+  background-color: transparent !important;
+}
+
+.VPFeature p.details {
   padding-left: 0 !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.VPFeature p.details:hover {
+  padding-left: 0 !important;
+  background-color: transparent !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 @media (min-width: 1280px) {
@@ -919,7 +949,6 @@ article p.details {
 .VPLink p:hover {
   background-color: var(--vp-c-bg-primary) !important;
   color: var(--vp-c-text-2) !important;
-  transition: color 0.3s;
   border-radius: 8px;
 }
 
@@ -1036,7 +1065,7 @@ article p.details {
 /* ----------------------- Feature ----------------------- */
 .VPFeature {
   background-color: var(--vp-c-bg-primary) !important;
-  border: 1px solid var(--vp-c-divider) !important;
+  border: 1px solid var(--vp-c-border) !important;
 }
 
 /* ----------------------- Curtains ---------------------- */
@@ -1078,6 +1107,7 @@ article p.details {
 
 .custom-block.details {
   background-color: var(--vp-c-grey-1) !important;
+  border: 1px solid var(--vp-c-border) !important;
 }
 
 .custom-block.details pre {
@@ -1146,10 +1176,7 @@ article p.details {
 
 .vp-doc a:hover {
   color: var(--vp-c-brand-soft) !important;
-}
-
-.custom-block.details {
-  border: 1px solid var(--vp-c-border) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.info,
@@ -1169,10 +1196,12 @@ article p.details {
 
 .custom-block.info a {
   color: var(--vp-c-info-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.info a:hover {
   color: var(--vp-c-info-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.tip,
@@ -1192,10 +1221,12 @@ article p.details {
 
 .custom-block.tip a {
   color: var(--vp-c-tip-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.tip a:hover {
   color: var(--vp-c-tip-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.warning,
@@ -1215,10 +1246,12 @@ article p.details {
 
 .custom-block.warning a {
   color: var(--vp-c-warning-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.warning a:hover {
   color: var(--vp-c-warning-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.danger,
@@ -1238,10 +1271,12 @@ article p.details {
 
 .custom-block.danger a {
   color: var(--vp-c-danger-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 .custom-block.danger a:hover {
   color: var(--vp-c-danger-1) !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
 }
 
 /* ------------------------ Footer ----------------------- */
