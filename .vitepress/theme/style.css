@@ -374,7 +374,7 @@
 
   --vp-c-border: var(--clr-primary-20);
   --vp-c-divider: var(--clr-primary-10);
-  --vp-c-divider-alt: var(--clr-primary-15);
+  --vp-c-divider-alt: var(--clr-primary-10);
   --vp-c-gutter: var(--clr-primary-90);
 
   --vp-c-purple-1: hsl(300, 50%, 55%);
@@ -1085,7 +1085,7 @@ body {
 }
 
 .vp-doc :not(pre) > code {
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--vp-c-divider-alt);
 }
 
 .info.custom-block :not(pre) > code {
