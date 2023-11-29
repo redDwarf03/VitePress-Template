@@ -171,13 +171,13 @@
     --vp-home-hero-image-background-image: none;
     --vp-home-hero-image-filter: none;
 
-    /* --------- Layout -------- */
-    --vp-header-anchor-symbol: "#";
-    --vp-layout-max-width: 1440px;
-
     /* -------- SideBar -------- */
     --vp-sidebar-width: 300px;
     --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+
+    /* --------- Layout -------- */
+    --vp-header-anchor-symbol: "#";
+    --vp-layout-max-width: 1440px;
 
     /* -------- LocalNav ------- */
     --vp-local-nav-bg-color: var(--vp-c-bg-default);
@@ -488,13 +488,13 @@
   --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
 
-  /* --------- Layout -------- */
-  --vp-header-anchor-symbol: "#";
-  --vp-layout-max-width: 1440px;
-
   /* -------- SideBar -------- */
   --vp-sidebar-width: 300px;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+
+  /* --------- Layout -------- */
+  --vp-header-anchor-symbol: "#";
+  --vp-layout-max-width: 1440px;
 
   /* -------- LocalNav ------- */
   --vp-local-nav-bg-color: var(--vp-c-bg-default);
@@ -945,6 +945,18 @@ body {
   border: 1px solid var(--vp-c-divider) !important;
 }
 
+/* ------------------------ Layout ----------------------- */
+.modal-container {
+  border: 1px solid var(--vp-c-divider) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.modal-button {
+  background-color: var(--vp-c-grey-1) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+}
+
 /* ----------------------- LocalNav ---------------------- */
 .VPLocalNav {
   top: -1px !important;
@@ -1059,7 +1071,6 @@ body {
 .danger.custom-block :not(pre) > code {
   border: 1px solid var(--vp-c-danger-2) !important;
 }
-
 
 .custom-block.details {
   background-color: var(--vp-c-grey-1) !important;
