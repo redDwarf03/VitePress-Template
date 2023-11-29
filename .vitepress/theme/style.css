@@ -853,6 +853,14 @@ body {
   background-color: var(--vp-c-bg-primary) !important;
 }
 
+.icon {
+  background-color: var(--vp-c-gray-1) !important;
+}
+
+article p.details {
+  padding-left: 0 !important;
+}
+
 @media (min-width: 1280px) {
   .VPHero {
     padding-top: 10% !important;
@@ -863,10 +871,6 @@ body {
   .VPHero {
     padding-top: 30% !important;
   }
-}
-
-.icon {
-  background-color: var(--vp-c-gray-1) !important;
 }
 
 /* ----------------------- SideBar ----------------------- */
