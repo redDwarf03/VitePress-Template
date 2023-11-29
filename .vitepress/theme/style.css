@@ -869,7 +869,6 @@ body {
 }
 
 .VPFeature:hover {
-  /* border-radius: 12px !important; */
   transform: translateY(-4px);
 }
 
