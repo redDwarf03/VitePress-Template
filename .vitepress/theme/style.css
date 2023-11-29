@@ -63,10 +63,10 @@
     --vp-c-purple-2: hsl(300, 50%, 35%);
     --vp-c-purple-3: hsl(300, 50%, 15%);
     --vp-c-purple-soft: hsl(300, 50%, 40%);
-    --vp-c-blue-1: hsl(200, 50%, 65%);
-    --vp-c-blue-2: hsl(200, 50%, 30%);
-    --vp-c-blue-3: hsl(200, 50%, 15%);
-    --vp-c-blue-soft: hsl(200, 50%, 45%);
+    --vp-c-indigo-1: hsl(200, 50%, 65%);
+    --vp-c-indigo-2: hsl(200, 50%, 30%);
+    --vp-c-indigo-3: hsl(200, 50%, 15%);
+    --vp-c-indigo-soft: hsl(200, 50%, 45%);
     --vp-c-green-1: hsl(150, 50%, 65%);
     --vp-c-green-2: hsl(150, 50%, 30%);
     --vp-c-green-3: hsl(150, 50%, 15%);
@@ -108,6 +108,7 @@
     --vp-button-sponsor-active-border: var(--vp-c-sponsor);
     --vp-button-sponsor-active-text: var(--vp-c-sponsor);
     --vp-button-sponsor-active-bg: transparent;
+    --vp-c-sponsor: var(--vp-c-brand);
 
     /* --------- NavBar -------- */
     --vp-nav-height: 64px;
@@ -192,10 +193,10 @@
     --vp-c-brand-3: var(--vp-c-purple-3);
     --vp-c-brand-soft: var(--vp-c-purple-soft);
     --vp-c-brand: var(--vp-c-brand-2);
-    --vp-c-info-1: var(--vp-c-blue-1);
-    --vp-c-info-2: var(--vp-c-blue-2);
-    --vp-c-info-3: var(--vp-c-blue-3);
-    --vp-c-info-soft: var(--vp-c-blue-soft);
+    --vp-c-info-1: var(--vp-c-indigo-1);
+    --vp-c-info-2: var(--vp-c-indigo-2);
+    --vp-c-info-3: var(--vp-c-indigo-3);
+    --vp-c-info-soft: var(--vp-c-indigo-soft);
     --vp-c-tip-1: var(--vp-c-green-1);
     --vp-c-tip-2: var(--vp-c-green-2);
     --vp-c-tip-3: var(--vp-c-green-3);
@@ -212,10 +213,10 @@
     /* --------- Frames -------- */
     --vp-custom-block-font-size: 14px;
     --vp-custom-block-code-font-size: 13px;
-    --vp-custom-block-info-border: var(--vp-c-blue-2);
-    --vp-custom-block-info-text: var(--vp-c-blue-1);
-    --vp-custom-block-info-bg: var(--vp-c-blue-3);
-    --vp-custom-block-info-code-bg: var(--vp-c-blue-soft);
+    --vp-custom-block-info-border: var(--vp-c-indigo-2);
+    --vp-custom-block-info-text: var(--vp-c-indigo-1);
+    --vp-custom-block-info-bg: var(--vp-c-indigo-3);
+    --vp-custom-block-info-code-bg: var(--vp-c-indigo-soft);
     --vp-custom-block-tip-border: var(--vp-c-green-2);
     --vp-custom-block-tip-text: var(--vp-c-green-1);
     --vp-custom-block-tip-bg: var(--vp-c-green-3);
@@ -234,9 +235,9 @@
     --vp-custom-block-details-code-bg: var(--vp-c-grey-2);
 
     /* --------- Badges -------- */
-    --vp-badge-info-border: var(--vp-c-blue-2);
-    --vp-badge-info-text: var(--vp-c-blue-1);
-    --vp-badge-info-bg: var(--vp-c-blue-3);
+    --vp-badge-info-border: var(--vp-c-indigo-2);
+    --vp-badge-info-text: var(--vp-c-indigo-1);
+    --vp-badge-info-bg: var(--vp-c-indigo-3);
     --vp-badge-tip-border: var(--vp-c-green-2);
     --vp-badge-tip-text: var(--vp-c-green-1);
     --vp-badge-tip-bg: var(--vp-c-green-3);
@@ -380,10 +381,10 @@
   --vp-c-purple-2: hsl(300, 50%, 35%);
   --vp-c-purple-3: hsl(300, 50%, 5%);
   --vp-c-purple-soft: hsl(300, 50%, 40%);
-  --vp-c-blue-1: hsl(200, 50%, 35%);
-  --vp-c-blue-2: hsl(200, 50%, 70%);
-  --vp-c-blue-3: hsl(200, 50%, 85%);
-  --vp-c-blue-soft: hsl(200, 50%, 75%);
+  --vp-c-indigo-1: hsl(200, 50%, 35%);
+  --vp-c-indigo-2: hsl(200, 50%, 70%);
+  --vp-c-indigo-3: hsl(200, 50%, 85%);
+  --vp-c-indigo-soft: hsl(200, 50%, 75%);
   --vp-c-green-1: hsl(150, 50%, 35%);
   --vp-c-green-2: hsl(150, 50%, 70%);
   --vp-c-green-3: hsl(150, 50%, 85%);
@@ -425,6 +426,7 @@
   --vp-button-sponsor-active-border: var(--vp-c-sponsor);
   --vp-button-sponsor-active-text: var(--vp-c-sponsor);
   --vp-button-sponsor-active-bg: transparent;
+  --vp-c-sponsor: var(--vp-c-brand);
 
   /* --------- NavBar -------- */
   --vp-nav-height: 64px;
@@ -509,10 +511,10 @@
   --vp-c-brand-3: var(--vp-c-purple-3);
   --vp-c-brand-soft: var(--vp-c-purple-soft);
   --vp-c-brand: var(--vp-c-brand-2);
-  --vp-c-info-1: var(--vp-c-blue-1);
-  --vp-c-info-2: var(--vp-c-blue-2);
-  --vp-c-info-3: var(--vp-c-blue-1);
-  --vp-c-info-soft: var(--vp-c-blue-soft);
+  --vp-c-info-1: var(--vp-c-indigo-1);
+  --vp-c-info-2: var(--vp-c-indigo-2);
+  --vp-c-info-3: var(--vp-c-indigo-1);
+  --vp-c-info-soft: var(--vp-c-indigo-soft);
   --vp-c-tip-1: var(--vp-c-green-1);
   --vp-c-tip-2: var(--vp-c-green-2);
   --vp-c-tip-3: var(--vp-c-green-1);
@@ -529,10 +531,10 @@
   /* --------- Frames -------- */
   --vp-custom-block-font-size: 14px;
   --vp-custom-block-code-font-size: 13px;
-  --vp-custom-block-info-border: var(--vp-c-blue-2);
-  --vp-custom-block-info-text: var(--vp-c-blue-1);
-  --vp-custom-block-info-bg: var(--vp-c-blue-3);
-  --vp-custom-block-info-code-bg: var(--vp-c-blue-soft);
+  --vp-custom-block-info-border: var(--vp-c-indigo-2);
+  --vp-custom-block-info-text: var(--vp-c-indigo-1);
+  --vp-custom-block-info-bg: var(--vp-c-indigo-3);
+  --vp-custom-block-info-code-bg: var(--vp-c-indigo-soft);
   --vp-custom-block-tip-border: var(--vp-c-green-2);
   --vp-custom-block-tip-text: var(--vp-c-green-1);
   --vp-custom-block-tip-bg: var(--vp-c-green-3);
@@ -551,9 +553,9 @@
   --vp-custom-block-details-code-bg: var(--vp-c-grey-2);
 
   /* --------- Badges -------- */
-  --vp-badge-info-border: var(--vp-c-blue-2);
-  --vp-badge-info-text: var(--vp-c-blue-1);
-  --vp-badge-info-bg: var(--vp-c-blue-3);
+  --vp-badge-info-border: var(--vp-c-indigo-2);
+  --vp-badge-info-text: var(--vp-c-indigo-1);
+  --vp-badge-info-bg: var(--vp-c-indigo-3);
   --vp-badge-tip-border: var(--vp-c-green-2);
   --vp-badge-tip-text: var(--vp-c-green-1);
   --vp-badge-tip-bg: var(--vp-c-green-3);
