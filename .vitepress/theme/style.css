@@ -52,6 +52,7 @@
     --vp-c-bg: var(--vp-c-bg-default);
     --vp-c-bg-primary: var(--clr-primary-15);
     --vp-c-bg-alt: var(--clr-primary-10);
+    --vp-c-bg-elv: var(--vp-c-bg-primary);
     --vp-c-bg-soft: var(--clr-primary-15);
 
     --vp-c-border: var(--clr-primary-30);
@@ -370,6 +371,7 @@
   --vp-c-bg: var(--vp-c-bg-default);
   --vp-c-bg-primary: var(--clr-primary-2-5);
   --vp-c-bg-alt: var(--clr-primary-0);
+  --vp-c-bg-elv: var(--vp-c-bg-primary);
   --vp-c-bg-soft: var(--clr-primary-2-5);
 
   --vp-c-border: var(--clr-primary-20);
