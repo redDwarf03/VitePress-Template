@@ -63,7 +63,7 @@
     --vp-c-purple-1: hsl(300, 50%, 65%);
     --vp-c-purple-2: hsl(300, 50%, 35%);
     --vp-c-purple-3: hsl(300, 50%, 15%);
-    --vp-c-purple-soft: hsl(300, 50%, 50%);
+    --vp-c-purple-soft: hsl(300, 50%, 40%);
     --vp-c-indigo-1: hsl(200, 50%, 65%);
     --vp-c-indigo-2: hsl(200, 50%, 30%);
     --vp-c-indigo-3: hsl(200, 50%, 15%);
@@ -382,7 +382,7 @@
   --vp-c-purple-1: hsl(300, 50%, 65%);
   --vp-c-purple-2: hsl(300, 50%, 35%);
   --vp-c-purple-3: hsl(300, 50%, 15%);
-  --vp-c-purple-soft: hsl(300, 50%, 50%);
+  --vp-c-purple-soft: hsl(300, 50%, 40%);
   --vp-c-indigo-1: hsl(200, 50%, 35%);
   --vp-c-indigo-2: hsl(200, 50%, 70%);
   --vp-c-indigo-3: hsl(200, 50%, 85%);
