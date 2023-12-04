@@ -5,65 +5,65 @@
     font-family: "Poppins", monospace;
     /* ------------------------------------------------------ Colors ------------------------------------------------------ */
     /* ------------------------ Global ----------------------- */
-    --clr-primary-0: hsl(210, 15%, 0%);
-    --clr-primary-5: hsl(210, 15%, 5%);
-    --clr-primary-10: hsl(210, 15%, 10%);
-    --clr-primary-15: hsl(210, 15%, 15%);
-    --clr-primary-20: hsl(210, 15%, 20%);
-    --clr-primary-25: hsl(210, 15%, 25%);
-    --clr-primary-30: hsl(210, 15%, 30%);
-    --clr-primary-35: hsl(210, 15%, 35%);
-    --clr-primary-40: hsl(210, 15%, 40%);
-    --clr-primary-45: hsl(210, 15%, 45%);
-    --clr-primary-50: hsl(210, 15%, 50%);
-    --clr-primary-55: hsl(210, 15%, 55%);
-    --clr-primary-60: hsl(210, 15%, 60%);
-    --clr-primary-65: hsl(210, 15%, 65%);
-    --clr-primary-70: hsl(210, 15%, 70%);
-    --clr-primary-75: hsl(210, 15%, 75%);
-    --clr-primary-80: hsl(210, 15%, 80%);
-    --clr-primary-85: hsl(210, 15%, 85%);
-    --clr-primary-90: hsl(210, 15%, 90%);
-    --clr-primary-95: hsl(210, 15%, 95%);
-    --clr-primary-100: hsl(210, 15%, 100%);
+    --clr-primary-0: hsl(240, 0%, 0%);
+    --clr-primary-5: hsl(240, 0%, 5%);
+    --clr-primary-10: hsl(240, 0%, 10%);
+    --clr-primary-15: hsl(240, 0%, 15%);
+    --clr-primary-20: hsl(240, 0%, 20%);
+    --clr-primary-25: hsl(240, 0%, 25%);
+    --clr-primary-30: hsl(240, 0%, 30%);
+    --clr-primary-35: hsl(240, 0%, 35%);
+    --clr-primary-40: hsl(240, 0%, 40%);
+    --clr-primary-45: hsl(240, 0%, 45%);
+    --clr-primary-50: hsl(240, 0%, 50%);
+    --clr-primary-55: hsl(240, 0%, 55%);
+    --clr-primary-60: hsl(240, 0%, 60%);
+    --clr-primary-65: hsl(240, 0%, 65%);
+    --clr-primary-70: hsl(240, 0%, 70%);
+    --clr-primary-75: hsl(240, 0%, 75%);
+    --clr-primary-80: hsl(240, 0%, 80%);
+    --clr-primary-85: hsl(240, 0%, 85%);
+    --clr-primary-90: hsl(240, 0%, 90%);
+    --clr-primary-95: hsl(240, 0%, 95%);
+    --clr-primary-100: hsl(240, 0%, 100%);
 
     /* ----------------------- Project ----------------------- */
     /* --------- Global -------- */
-    --vp-c-gray-1: var(--clr-primary-15);
-    --vp-c-gray-2: var(--clr-primary-20);
-    --vp-c-gray-3: var(--clr-primary-25);
-    --vp-c-gray-soft: var(--clr-primary-30);
+    --vp-c-gray-1: var(--clr-primary-10);
+    --vp-c-gray-2: var(--clr-primary-15);
+    --vp-c-gray-3: var(--clr-primary-20);
+    --vp-c-gray-soft: var(--clr-primary-25);
 
     --vp-c-grey-1: var(--vp-c-gray-1);
     --vp-c-grey-2: var(--vp-c-gray-2);
-    --vp-c-grey-3: var(--clr-primary-45);
-    --vp-c-grey-soft: var(--clr-primary-65);
+    --vp-c-grey-3: var(--clr-primary-40);
+    --vp-c-grey-soft: var(--clr-primary-60);
 
     --vp-c-white: #ffffff;
     --vp-c-black: #000000;
     --vp-c-neutral: var(--vp-c-white);
-    --vp-c-neutral-inverse: var(--clr-primary-10);
+    --vp-c-neutral-inverse: var(--clr-primary-5);
 
     --vp-c-text-1: var(--clr-primary-90);
     --vp-c-text-2: var(--clr-primary-70);
     --vp-c-text-3: var(--clr-primary-50);
 
-    --vp-c-bg-default: var(--clr-primary-10);
+    --vp-c-bg-default: var(--clr-primary-5);
     --vp-c-bg: var(--vp-c-bg-default);
-    --vp-c-bg-primary: var(--clr-primary-15);
-    --vp-c-bg-alt: var(--clr-primary-10);
+    --vp-c-bg-primary: var(--clr-primary-10);
+    --vp-c-bg-alt: var(--clr-primary-5);
     --vp-c-bg-elv: var(--vp-c-bg-primary);
-    --vp-c-bg-soft: var(--clr-primary-15);
+    --vp-c-bg-soft: var(--clr-primary-10);
 
-    --vp-c-border: var(--clr-primary-30);
-    --vp-c-divider: var(--clr-primary-20);
-    --vp-c-divider-alt: var(--clr-primary-25);
+    --vp-c-border: var(--clr-primary-25);
+    --vp-c-divider: var(--clr-primary-15);
+    --vp-c-divider-alt: var(--clr-primary-20);
     --vp-c-gutter: var(--clr-primary-90);
 
-    --vp-c-purple-1: hsl(300, 50%, 65%);
-    --vp-c-purple-2: hsl(300, 50%, 35%);
-    --vp-c-purple-3: hsl(300, 50%, 15%);
-    --vp-c-purple-soft: hsl(300, 50%, 40%);
+    --vp-c-purple-1: hsl(340, 75%, 65%);
+    --vp-c-purple-2: hsl(340, 75%, 35%);
+    --vp-c-purple-3: hsl(340, 75%, 15%);
+    --vp-c-purple-soft: hsl(340, 75%, 40%);
     --vp-c-indigo-1: hsl(200, 50%, 65%);
     --vp-c-indigo-2: hsl(200, 50%, 30%);
     --vp-c-indigo-3: hsl(200, 50%, 15%);
@@ -165,7 +165,7 @@
     --vp-local-search-highlight-bg: var(--vp-c-brand-1);
     --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
     --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
-    --search-background: hsla(210, 15%, 5%, 0.5);
+    --search-background: hsla(240, 5%, 5%, 0.5);
 
     /* ---------- Hero --------- */
     --vp-home-hero-name-color: var(--vp-c-brand-1);
@@ -289,10 +289,10 @@
     --vp-carbon-ads-hover-poweredby-color: var(--vp-c-text-1);
 
     /* --------- Cards --------- */
-    --clr-card: var(--clr-primary-15);
-    --clr-card-hover: var(--clr-primary-20);
-    --clr-card-border: var(--clr-primary-20);
-    --clr-card-underline: var(--clr-primary-25);
+    --clr-card: var(--clr-primary-10);
+    --clr-card-hover: var(--clr-primary-15);
+    --clr-card-border: var(--clr-primary-15);
+    --clr-card-underline: var(--clr-primary-20);
     --card-shadow: 0 0 20px var(--clr-primary-0);
 
     /* -------- Z-index -------- */
@@ -323,28 +323,28 @@
 :root {
   /* ------------------------------------------------------ Colors ------------------------------------------------------ */
   /* ------------------------ Global ----------------------- */
-  --clr-primary-0: hsl(210, 15%, 100%);
-  --clr-primary-2-5: hsl(210, 15%, 97.5%);
-  --clr-primary-5: hsl(210, 15%, 95%);
-  --clr-primary-10: hsl(210, 15%, 90%);
-  --clr-primary-15: hsl(210, 15%, 85%);
-  --clr-primary-20: hsl(210, 15%, 80%);
-  --clr-primary-25: hsl(210, 15%, 75%);
-  --clr-primary-30: hsl(210, 15%, 70%);
-  --clr-primary-35: hsl(210, 15%, 65%);
-  --clr-primary-40: hsl(210, 15%, 60%);
-  --clr-primary-45: hsl(210, 15%, 55%);
-  --clr-primary-50: hsl(210, 15%, 50%);
-  --clr-primary-55: hsl(210, 15%, 45%);
-  --clr-primary-60: hsl(210, 15%, 40%);
-  --clr-primary-65: hsl(210, 15%, 35%);
-  --clr-primary-70: hsl(210, 15%, 30%);
-  --clr-primary-75: hsl(210, 15%, 25%);
-  --clr-primary-80: hsl(210, 15%, 20%);
-  --clr-primary-85: hsl(210, 15%, 15%);
-  --clr-primary-90: hsl(210, 15%, 10%);
-  --clr-primary-95: hsl(210, 15%, 5%);
-  --clr-primary-100: hsl(210, 15%, 0%);
+  --clr-primary-0: hsl(240, 0%, 100%);
+  --clr-primary-2-5: hsl(240, 0%, 97.5%);
+  --clr-primary-5: hsl(240, 0%, 95%);
+  --clr-primary-10: hsl(240, 0%, 90%);
+  --clr-primary-15: hsl(240, 0%, 85%);
+  --clr-primary-20: hsl(240, 0%, 80%);
+  --clr-primary-25: hsl(240, 0%, 75%);
+  --clr-primary-30: hsl(240, 0%, 70%);
+  --clr-primary-35: hsl(240, 0%, 65%);
+  --clr-primary-40: hsl(240, 0%, 60%);
+  --clr-primary-45: hsl(240, 0%, 55%);
+  --clr-primary-50: hsl(240, 0%, 50%);
+  --clr-primary-55: hsl(240, 0%, 45%);
+  --clr-primary-60: hsl(240, 0%, 40%);
+  --clr-primary-65: hsl(240, 0%, 35%);
+  --clr-primary-70: hsl(240, 0%, 30%);
+  --clr-primary-75: hsl(240, 0%, 25%);
+  --clr-primary-80: hsl(240, 0%, 20%);
+  --clr-primary-85: hsl(240, 0%, 15%);
+  --clr-primary-90: hsl(240, 0%, 10%);
+  --clr-primary-95: hsl(240, 0%, 5%);
+  --clr-primary-100: hsl(240, 0%, 0%);
 
   /* ----------------------- Project ----------------------- */
   /* --------- Global -------- */
@@ -379,10 +379,11 @@
   --vp-c-divider-alt: var(--clr-primary-10);
   --vp-c-gutter: var(--clr-primary-90);
 
-  --vp-c-purple-1: hsl(300, 50%, 65%);
-  --vp-c-purple-2: hsl(300, 50%, 35%);
-  --vp-c-purple-3: hsl(300, 50%, 15%);
-  --vp-c-purple-soft: hsl(300, 50%, 40%);
+
+  --vp-c-purple-1: hsl(340, 75%, 65%);
+  --vp-c-purple-2: hsl(340, 75%, 35%);
+  --vp-c-purple-3: hsl(340, 75%, 15%);
+  --vp-c-purple-soft: hsl(340, 75%, 40%);
   --vp-c-indigo-1: hsl(200, 50%, 35%);
   --vp-c-indigo-2: hsl(200, 50%, 70%);
   --vp-c-indigo-3: hsl(200, 50%, 85%);
@@ -484,7 +485,7 @@
   --vp-local-search-highlight-bg: var(--vp-c-brand-1);
   --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
   --vp-backdrop-bg-color: rgba(0, 0, 0, 0.6);
-  --search-background: hsla(210, 15%, 5%, 0.5);
+  --search-background: hsla(240, 15%, 5%, 0.5);
 
   /* ---------- Hero --------- */
   --vp-home-hero-name-color: var(--vp-c-brand-1);
@@ -657,15 +658,6 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
-.VPNav {
-  background-color: var(--vp-c-bg-primary) !important;
-}
-
-.VPNavBarTitle.has-sidebar .title {
-  background-color: var(--vp-c-bg-primary) !important;
-  border-bottom-color: transparent !important;
-}
-
 .DocSearch-Modal header {
   border-bottom: transparent !important;
 }
@@ -679,14 +671,6 @@ body {
 }
 
 @media (max-width: 1023px) {
-  header {
-    border-bottom: 1px solid var(--vp-c-gray-2) !important;
-  }
-
-  .content-body {
-    background-color: var(--vp-c-bg-primary) !important;
-  }
-
   .VPSwitch {
     border: 0 !important;
     background-color: var(--vp-input-switch-bg-color) !important;
@@ -705,9 +689,7 @@ body {
 @media (min-width: 1024px) {
   .VPNav,
   .VPNavBar {
-    background-color: var(--vp-c-bg-primary) !important;
     height: var(--vp-nav-height) + 1px !important;
-    border-bottom-color: var(--vp-c-divider) !important;
   }
 
   .VPNavBarTitle .title {
@@ -719,8 +701,8 @@ body {
     position: fixed;
     left: 0 !important;
     padding-left: 32px !important;
-    background-color: var(--vp-c-bg-primary) !important;
     width: var(--vp-sidebar-width) !important;
+    border-bottom: transparent !important;
   }
 
   .VPNavBar.has-sidebar .content {
@@ -733,14 +715,12 @@ body {
   .VPNavBar .container .content .content-body {
     position: fixed !important;
     right: 32px !important;
-    background-color: var(--vp-c-bg-primary) !important;
   }
 
   .VPNavScreen {
     top: calc(
       var(--vp-nav-height) + var(--vp-layout-top-height, 0px)
     ) !important;
-    background-color: var(--vp-c-bg-primary) !important;
   }
 
   .VPNavScreenAppearance {
@@ -797,7 +777,7 @@ body {
 
 .DocSearch-Modal {
   background-color: var(--docsearch-color) !important;
-  border: 1px solid var(--vp-c-bg-primary) !important;
+  border: 1px solid var(--vp-c-divider) !important;
   box-shadow: none;
 }
 
@@ -832,7 +812,7 @@ body {
 
 @media (max-width: 767px) {
   .DocSearch-Button {
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: var(--vp-c-bg-default) !important;
     border: none !important;
   }
 }
@@ -915,7 +895,6 @@ body {
   padding-top: 32px !important;
   padding-left: 32px;
   background-color: var(--vp-c-bg-default) !important;
-  border-right: 1px solid var(--vp-c-gray-2) !important;
 }
 
 .item .link {
