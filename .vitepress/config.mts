@@ -38,10 +38,10 @@ export default defineConfig({
       '/docs/reference/': { base: '/docs/reference/', items: sidebarReference() }
     },
 
-    // editLink: {
-    //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-    //   text: 'Edit this page on GitHub'
-    // },
+    editLink: {
+      pattern: 'https://github.com/lIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIl/VitePress-Template/edit/main/:path',
+      text: 'Edit this page on GitHub'
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/' },
