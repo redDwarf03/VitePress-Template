@@ -949,8 +949,6 @@ body {
 @media (min-width: 960px) {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
-    margin-top: 32px;
-    padding-top: 0 !important;
   }
 }
 
