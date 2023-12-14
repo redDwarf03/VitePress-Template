@@ -833,7 +833,7 @@ body {
 }
 
 .DocSearch-Hit-source {
-  background-color: var(--docsearch-color) !important;
+  background-color: var(--vp-c-bg-default) !important;
 }
 
 .DocSearch-HitsFooter {
