@@ -122,7 +122,7 @@
     --vp-input-switch-bg-color: var(--vp-c-gray-2);
 
     /* --------- Search -------- */
-    --docsearch-color: var(--clr-primary-10);
+    --docsearch-color: var(--clr-primary-15);
     --docsearch-border-color: var(--clr-primary-20);
     --docsearch-primary-color: var(--vp-c-brand-1);
     --docsearch-text-color: var(--clr-primary-85);
@@ -441,7 +441,7 @@
   --vp-input-switch-bg-color: var(--vp-c-gray-3);
 
   /* --------- Search -------- */
-  --docsearch-color: var(--clr-primary-0);
+  --docsearch-color: var(--clr-primary-2-5);
   --docsearch-border-color: var(--clr-primary-10);
   --docsearch-primary-color: var(--vp-c-brand-1);
   --docsearch-text-color: var(--clr-primary-85);
@@ -658,11 +658,11 @@ body {
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
 .VPNav {
-  background-color: var(--vp-c-bg-primary) !important;
+  background-color: var(--vp-c-bg-default) !important;
 }
 
 .VPNavBarTitle.has-sidebar .title {
-  background-color: var(--vp-c-bg-primary) !important;
+  background-color: var(--vp-c-bg-default) !important;
   border-bottom-color: transparent !important;
 }
 
@@ -678,13 +678,27 @@ body {
   background-color: var(--vp-c-bg) !important;
 }
 
+@media (min-width: 960px) and (max-width: 1023px) {
+  .VPNav,
+  .VPNavBar {
+    background-color: transparent !important;
+    backdrop-filter: blur(20px);
+    height: var(--vp-nav-height) + 1px !important;
+    border-bottom-color: transparent !important;
+  }
+}
+
 @media (max-width: 1023px) {
   header {
-    border-bottom: 1px solid var(--vp-c-gray-2) !important;
+    border-bottom: none !important;
+  }
+
+  .VPNavBar:not(.has-sidebar):not(.top) {
+    border-bottom-color: transparent !important;
   }
 
   .content-body {
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: transparent !important;
   }
 
   .VPSwitch {
@@ -705,9 +719,10 @@ body {
 @media (min-width: 1024px) {
   .VPNav,
   .VPNavBar {
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(20px);
     height: var(--vp-nav-height) + 1px !important;
-    border-bottom-color: var(--vp-c-divider) !important;
+    border-bottom-color: transparent !important;
   }
 
   .VPNavBarTitle .title {
@@ -719,7 +734,7 @@ body {
     position: fixed;
     left: 0 !important;
     padding-left: 32px !important;
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: var(--vp-c-bg-default) !important;
     width: var(--vp-sidebar-width) !important;
   }
 
@@ -733,7 +748,7 @@ body {
   .VPNavBar .container .content .content-body {
     position: fixed !important;
     right: 32px !important;
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: transparent !important;
   }
 
   .VPNavScreen {
@@ -796,7 +811,7 @@ body {
 }
 
 .DocSearch-Modal {
-  background-color: var(--docsearch-color) !important;
+  background-color: var(--vp-c-bg-default) !important;
   border: 1px solid var(--vp-c-bg-primary) !important;
   box-shadow: none;
 }
@@ -832,7 +847,7 @@ body {
 
 @media (max-width: 767px) {
   .DocSearch-Button {
-    background-color: var(--vp-c-bg-primary) !important;
+    background-color: var(--vp-c-bg-default) !important;
     border: none !important;
   }
 }
@@ -867,7 +882,8 @@ body {
   background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--vp-c-divider) !important;
   border-radius: 12px !important;
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s, border-radius 0.25s, transform 0.25s !important;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s,
+    border-radius 0.25s, transform 0.25s !important;
 }
 
 .VPFeature:hover {
@@ -916,6 +932,7 @@ body {
   padding-left: 32px;
   background-color: var(--vp-c-bg-default) !important;
   border-right: 1px solid var(--vp-c-gray-2) !important;
+  z-index: var(--vp-z-index-sidebar) !important;
 }
 
 .item .link {
