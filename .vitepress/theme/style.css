@@ -657,6 +657,11 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
+header {
+  padding-top: var(--docsearch-spacing);
+  padding-bottom: var(--docsearch-spacing);
+}
+
 .VPNav {
   background-color: var(--vp-c-bg-default) !important;
 }
@@ -734,7 +739,7 @@ body {
     position: fixed;
     left: 0 !important;
     padding-left: 32px !important;
-    background-color: var(--vp-c-bg-default) !important;
+    background-color: transparent !important;
     width: var(--vp-sidebar-width) !important;
   }
 
@@ -932,7 +937,7 @@ body {
   padding-left: 32px;
   background-color: var(--vp-c-bg-default) !important;
   border-right: 1px solid var(--vp-c-gray-2) !important;
-  z-index: var(--vp-z-index-sidebar) !important;
+  z-index: 0 !important;
 }
 
 .item .link {
@@ -949,6 +954,8 @@ body {
 @media (min-width: 960px) {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
+    margin-top: 32px;
+    padding-top: 0 !important;
   }
 }
 
