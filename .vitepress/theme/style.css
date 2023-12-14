@@ -658,8 +658,8 @@ body {
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 
 .VPNav {
@@ -961,7 +961,7 @@ header {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
-    margin-top: 85px;
+    margin-top: 80px;
     padding-top: 6px !important;
   }
 }
@@ -970,7 +970,7 @@ header {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
-    margin-top: 85px;
+    margin-top: 80px;
     padding-top: 16px !important;
   }
 }
