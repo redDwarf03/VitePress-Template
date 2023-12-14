@@ -951,6 +951,12 @@ header {
   border-radius: 8px;
 }
 
+@media (min-width: 280px) and (max-width: 959px) {
+  .VPSidebar {
+    z-index: var(--vp-z-index-sidebar) !important;
+  }
+}
+
 @media (min-width: 960px) and (max-width: 1279px) {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
