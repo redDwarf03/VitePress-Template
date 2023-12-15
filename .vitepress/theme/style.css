@@ -963,8 +963,8 @@ body {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
-    margin-top: 80px;
-    padding-top: 12px !important;
+    margin-top: 81px;
+    padding-top: 13px !important;
   }
 }
 
@@ -972,8 +972,8 @@ body {
   .VPSidebar {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
-    margin-top: 80px;
-    padding-top: 24px !important;
+    margin-top: 81px;
+    padding-top: 23px !important;
   }
 }
 
