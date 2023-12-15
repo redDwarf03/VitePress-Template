@@ -313,10 +313,15 @@
       0 4px 12px rgba(0, 0, 0, 0.16);
 
     /* ------- Scrollbar ------- */
-    --scrollbar-track: var(--clr-primary-15);
-    --scrollbar-thumb: var(--clr-primary-25);
-    --scrollbar-thumb-hover: var(--clr-primary-35);
+    --scrollbar-track: var(--clr-primary-20);
+    --scrollbar-thumb: var(--clr-primary-20);
+    --scrollbar-thumb-hover: var(--clr-primary-25);
     --scrollbar-width: 7px;
+
+    --sidebar-scrollbar-track: var(--clr-primary-20);
+    --sidebar-scrollbar-thumb: var(--clr-primary-20);
+    --sidebar-scrollbar-thumb-hover: var(--clr-primary-25);
+    --sidebar-scrollbar-width: 7px;
   }
 }
 
@@ -326,7 +331,9 @@
   --clr-primary-0: hsl(210, 15%, 100%);
   --clr-primary-2-5: hsl(210, 15%, 97.5%);
   --clr-primary-5: hsl(210, 15%, 95%);
+  --clr-primary-7-5: hsl(210, 15%, 92.5%);
   --clr-primary-10: hsl(210, 15%, 90%);
+  --clr-primary-12-5: hsl(210, 15%, 87.5%);
   --clr-primary-15: hsl(210, 15%, 85%);
   --clr-primary-20: hsl(210, 15%, 80%);
   --clr-primary-25: hsl(210, 15%, 75%);
@@ -438,7 +445,7 @@
 
   --vp-input-border-color: var(--vp-c-border);
   --vp-input-bg-color: var(--vp-c-bg-alt);
-  --vp-input-switch-bg-color: var(--vp-c-gray-3);
+  --vp-input-switch-bg-color: var(--clr-primary-7-5);
 
   /* --------- Search -------- */
   --docsearch-color: var(--clr-primary-2-5);
@@ -614,10 +621,15 @@
   --card-shadow: 0 0 20px var(--clr-primary-5);
 
   /* ------- Scrollbar ------- */
-  --scrollbar-track: var(--clr-primary-5);
-  --scrollbar-thumb: var(--clr-primary-15);
-  --scrollbar-thumb-hover: var(--clr-primary-25);
+  --scrollbar-track: var(--clr-primary-7-5);
+  --scrollbar-thumb: var(--clr-primary-7-5);
+  --scrollbar-thumb-hover: var(--clr-primary-12-5);
   --scrollbar-width: 7px;
+
+  --sidebar-scrollbar-track: var(--clr-primary-7-5);
+  --sidebar-scrollbar-thumb: var(--clr-primary-7-5);
+  --sidebar-scrollbar-thumb-hover: var(--clr-primary-12-5);
+  --sidebar-scrollbar-width: 7px;
 }
 
 body {
@@ -651,8 +663,16 @@ body {
   border: calc(var(--scrollbar-width) / 4) solid var(--page-background);
 }
 
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: var(--sidebar-scrollbar-thumb);
+}
+
 *::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-hover);
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-scrollbar-thumb-hover);
 }
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
