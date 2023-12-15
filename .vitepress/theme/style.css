@@ -964,7 +964,7 @@ body {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
     margin-top: 81px;
-    padding-top: 13px !important;
+    padding-top: 29px !important;
   }
 }
 
@@ -973,7 +973,7 @@ body {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
     margin-top: 81px;
-    padding-top: 23px !important;
+    padding-top: 33px !important;
   }
 }
 
