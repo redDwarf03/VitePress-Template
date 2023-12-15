@@ -964,7 +964,7 @@ body {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
     margin-top: 81px;
-    padding-top: 28px !important;
+    padding-top: 1px !important;
   }
 }
 
@@ -973,7 +973,7 @@ body {
     width: var(--vp-sidebar-width) !important;
     top: 0 !important;
     margin-top: 81px;
-    padding-top: 33px !important;
+    padding-top: 1px !important;
   }
 }
 
@@ -1032,6 +1032,12 @@ body {
   }
 }
 
+@media (min-width: 960px) {
+  .VPDoc {
+    padding-top: 2px !important;
+  }
+}
+
 .VPDocOutlineDropdown button {
   background-color: var(--vp-c-bg-primary) !important;
   border: 1px solid var(--vp-c-divider) !important;
@@ -1050,6 +1056,10 @@ body {
 }
 
 /* ----------------------- LocalNav ---------------------- */
+.aside-container {
+  padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + var(--vp-doc-top-height, 0px) + 2px) !important;
+}
+
 .VPLocalNav {
   top: -1px !important;
   border: none !important;
