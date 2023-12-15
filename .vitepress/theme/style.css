@@ -936,7 +936,7 @@ header {
   padding-top: 32px !important;
   padding-left: 32px;
   background-color: var(--vp-c-bg-default) !important;
-  border-right: 1px solid var(--vp-c-gray-2) !important;
+  border-right: none !important;
   z-index: 0 !important;
 }
 
