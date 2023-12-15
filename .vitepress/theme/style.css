@@ -112,7 +112,7 @@
     --vp-c-sponsor: var(--vp-c-brand);
 
     /* --------- NavBar -------- */
-    --vp-nav-height: 64px;
+    --vp-nav-height: 80px;
     --vp-nav-bg-color: var(--vp-c-bg-default);
     --vp-nav-screen-bg-color: var(--vp-c-bg-default);
     --vp-nav-logo-height: 24px;
@@ -431,7 +431,7 @@
   --vp-c-sponsor: var(--vp-c-brand);
 
   /* --------- NavBar -------- */
-  --vp-nav-height: 64px;
+  --vp-nav-height: 80px;
   --vp-nav-bg-color: var(--vp-c-bg-default);
   --vp-nav-screen-bg-color: var(--vp-c-bg-default);
   --vp-nav-logo-height: 24px;
@@ -657,11 +657,6 @@ body {
 
 /* ------------------------------------------------------ NavBar ------------------------------------------------------ */
 /* ------------------------ NavBar ----------------------- */
-header {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 .VPNav {
   background-color: var(--vp-c-bg-default) !important;
 }
