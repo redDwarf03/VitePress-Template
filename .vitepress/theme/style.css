@@ -5,27 +5,27 @@
     font-family: "Poppins", monospace;
     /* ------------------------------------------------------ Colors ------------------------------------------------------ */
     /* ------------------------ Global ----------------------- */
-    --clr-primary-0: hsl(210, 15%, 0%);
-    --clr-primary-5: hsl(210, 15%, 5%);
-    --clr-primary-10: hsl(210, 15%, 10%);
-    --clr-primary-15: hsl(210, 15%, 15%);
-    --clr-primary-20: hsl(210, 15%, 20%);
-    --clr-primary-25: hsl(210, 15%, 25%);
-    --clr-primary-30: hsl(210, 15%, 30%);
-    --clr-primary-35: hsl(210, 15%, 35%);
-    --clr-primary-40: hsl(210, 15%, 40%);
-    --clr-primary-45: hsl(210, 15%, 45%);
-    --clr-primary-50: hsl(210, 15%, 50%);
-    --clr-primary-55: hsl(210, 15%, 55%);
-    --clr-primary-60: hsl(210, 15%, 60%);
-    --clr-primary-65: hsl(210, 15%, 65%);
-    --clr-primary-70: hsl(210, 15%, 70%);
-    --clr-primary-75: hsl(210, 15%, 75%);
-    --clr-primary-80: hsl(210, 15%, 80%);
-    --clr-primary-85: hsl(210, 15%, 85%);
-    --clr-primary-90: hsl(210, 15%, 90%);
-    --clr-primary-95: hsl(210, 15%, 95%);
-    --clr-primary-100: hsl(210, 15%, 100%);
+    --clr-primary-0: hsl(210, 7.5%, 0%);
+    --clr-primary-5: hsl(210, 7.5%, 5%);
+    --clr-primary-10: hsl(210, 7.5%, 10%);
+    --clr-primary-15: hsl(210, 7.5%, 15%);
+    --clr-primary-20: hsl(210, 7.5%, 20%);
+    --clr-primary-25: hsl(210, 7.5%, 25%);
+    --clr-primary-30: hsl(210, 7.5%, 30%);
+    --clr-primary-35: hsl(210, 7.5%, 35%);
+    --clr-primary-40: hsl(210, 7.5%, 40%);
+    --clr-primary-45: hsl(210, 7.5%, 45%);
+    --clr-primary-50: hsl(210, 7.5%, 50%);
+    --clr-primary-55: hsl(210, 7.5%, 55%);
+    --clr-primary-60: hsl(210, 7.5%, 60%);
+    --clr-primary-65: hsl(210, 7.5%, 65%);
+    --clr-primary-70: hsl(210, 7.5%, 70%);
+    --clr-primary-75: hsl(210, 7.5%, 75%);
+    --clr-primary-80: hsl(210, 7.5%, 80%);
+    --clr-primary-85: hsl(210, 7.5%, 85%);
+    --clr-primary-90: hsl(210, 7.5%, 90%);
+    --clr-primary-95: hsl(210, 7.5%, 95%);
+    --clr-primary-100: hsl(210, 7.5%, 100%);
 
     /* ----------------------- Project ----------------------- */
     /* --------- Global -------- */
@@ -58,7 +58,7 @@
     --vp-c-border: var(--clr-primary-30);
     --vp-c-divider: var(--clr-primary-20);
     --vp-c-divider-alt: var(--clr-primary-25);
-    --vp-c-gutter: var(--clr-primary-90);
+    --vp-c-gutter: var(--clr-primary-10);
 
     --vp-c-purple-1: hsl(300, 50%, 65%);
     --vp-c-purple-2: hsl(300, 50%, 35%);
@@ -328,30 +328,30 @@
 :root {
   /* ------------------------------------------------------ Colors ------------------------------------------------------ */
   /* ------------------------ Global ----------------------- */
-  --clr-primary-0: hsl(210, 15%, 100%);
-  --clr-primary-2-5: hsl(210, 15%, 97.5%);
-  --clr-primary-5: hsl(210, 15%, 95%);
-  --clr-primary-7-5: hsl(210, 15%, 92.5%);
-  --clr-primary-10: hsl(210, 15%, 90%);
-  --clr-primary-12-5: hsl(210, 15%, 87.5%);
-  --clr-primary-15: hsl(210, 15%, 85%);
-  --clr-primary-20: hsl(210, 15%, 80%);
-  --clr-primary-25: hsl(210, 15%, 75%);
-  --clr-primary-30: hsl(210, 15%, 70%);
-  --clr-primary-35: hsl(210, 15%, 65%);
-  --clr-primary-40: hsl(210, 15%, 60%);
-  --clr-primary-45: hsl(210, 15%, 55%);
-  --clr-primary-50: hsl(210, 15%, 50%);
-  --clr-primary-55: hsl(210, 15%, 45%);
-  --clr-primary-60: hsl(210, 15%, 40%);
-  --clr-primary-65: hsl(210, 15%, 35%);
-  --clr-primary-70: hsl(210, 15%, 30%);
-  --clr-primary-75: hsl(210, 15%, 25%);
-  --clr-primary-80: hsl(210, 15%, 20%);
-  --clr-primary-85: hsl(210, 15%, 15%);
-  --clr-primary-90: hsl(210, 15%, 10%);
-  --clr-primary-95: hsl(210, 15%, 5%);
-  --clr-primary-100: hsl(210, 15%, 0%);
+  --clr-primary-0: hsl(210, 7.5%, 100%);
+  --clr-primary-2-5: hsl(210, 7.5%, 97.5%);
+  --clr-primary-5: hsl(210, 7.5%, 95%);
+  --clr-primary-7-5: hsl(210, 7.5%, 92.5%);
+  --clr-primary-10: hsl(210, 7.5%, 90%);
+  --clr-primary-12-5: hsl(210, 7.5%, 87.5%);
+  --clr-primary-15: hsl(210, 7.5%, 85%);
+  --clr-primary-20: hsl(210, 7.5%, 80%);
+  --clr-primary-25: hsl(210, 7.5%, 75%);
+  --clr-primary-30: hsl(210, 7.5%, 70%);
+  --clr-primary-35: hsl(210, 7.5%, 65%);
+  --clr-primary-40: hsl(210, 7.5%, 60%);
+  --clr-primary-45: hsl(210, 7.5%, 55%);
+  --clr-primary-50: hsl(210, 7.5%, 50%);
+  --clr-primary-55: hsl(210, 7.5%, 45%);
+  --clr-primary-60: hsl(210, 7.5%, 40%);
+  --clr-primary-65: hsl(210, 7.5%, 35%);
+  --clr-primary-70: hsl(210, 7.5%, 30%);
+  --clr-primary-75: hsl(210, 7.5%, 25%);
+  --clr-primary-80: hsl(210, 7.5%, 20%);
+  --clr-primary-85: hsl(210, 7.5%, 15%);
+  --clr-primary-90: hsl(210, 7.5%, 10%);
+  --clr-primary-95: hsl(210, 7.5%, 5%);
+  --clr-primary-100: hsl(210, 7.5%, 0%);
 
   /* ----------------------- Project ----------------------- */
   /* --------- Global -------- */
@@ -384,7 +384,7 @@
   --vp-c-border: var(--clr-primary-20);
   --vp-c-divider: var(--clr-primary-10);
   --vp-c-divider-alt: var(--clr-primary-10);
-  --vp-c-gutter: var(--clr-primary-90);
+  --vp-c-gutter: var(--clr-primary-0);
 
   --vp-c-purple-1: hsl(300, 50%, 65%);
   --vp-c-purple-2: hsl(300, 50%, 35%);
@@ -644,7 +644,7 @@ body {
 /* ----------------------- Firefox ----------------------- */
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  /* scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); */
 }
 
 /* ----------------- Chrome, Edge, Safari ---------------- */
@@ -1094,7 +1094,8 @@ body {
 .VPLocalNavOutlineDropdown .items {
   gap: 0 !important;
   background-color: transparent !important;
-  border: 1px solid var(--clr-primary-25) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+  box-shadow: var(--vp-shadow-1) !important;
 }
 
 @media (min-width: 280px) and (max-width: 460px) {
